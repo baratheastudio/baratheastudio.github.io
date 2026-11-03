@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps that pair well | Barathea theme</title>
+<meta name="description" content="Where apps fit in Barathea: app blocks and embeds, and the places left for wish lists, back-in-stock alerts, booking, reviews and translation.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Good to know</p>
+  <h1>Apps that pair well</h1>
+  <p class="lede">Shopify asks themes to leave app work to apps. Barathea does, and leaves a clean place where each kind of app fits.</p>
+</header>
+
+<h2 id="where">Where apps go</h2>
+<ul>
+  <li><strong>App blocks</strong> go in Product information, Featured product, the Story section of journal articles and the Bag page, beside the theme's own blocks.</li>
+  <li>The <a href="sections.html#section-apps">Apps</a> section holds app blocks on any page, the header and footer groups included.</li>
+  <li><strong>App embeds</strong> (chat buttons, pop-ups, tracking) are turned on in the theme editor, in its <strong>App embeds</strong> panel.</li>
+  <li>Wherever an app block can go, a <strong>Custom Liquid</strong> block can too, for snippets an app asks you to paste.</li>
+</ul>
+
+<h2 id="kinds">Kinds of apps, and their place</h2>
+<dl class="rows">
+  <div><dt>Wish list</dt><dd>Not built in. Add the app's block to Product information next to Buy buttons, and its embed for a header link if it has one.</dd></div>
+  <div><dt>Back-in-stock alerts</dt><dd>Not built in. Add the app's block under Buy buttons. The theme's own path for a sold-out size is Ask about this size, which opens Client care with the product and size.</dd></div>
+  <div><dt>Booking</dt><dd>Themes may not take bookings. Paste the address of your booking app's page into <strong>Booking link</strong> in <span class="path">Theme settings &gt; Client care</span>, and every Arrange a visit link goes there. Without one, Arrange a visit opens your contact form with the visit topic.</dd></div>
+  <div><dt>Reviews</dt><dd>Review apps fill the rating metafields the theme reads (<code>reviews.rating</code> and <code>reviews.rating_count</code>) for the Star rating block and, if you turn it on, the rating on cards. Add the app's review list as an app block or in an Apps section.</dd></div>
+  <div><dt>Fit and size advice, try-on</dt><dd>App blocks in Product information, near Colors and sizes.</dd></div>
+  <div><dt>Store stock lookup</dt><dd>The theme shows Shopify's own pickup availability for the chosen size. Lookups across stores need an app.</dd></div>
+  <div><dt>Filters and complementary products</dt><dd>Shopify's free Search and Discovery app: filters for collections and search, and the products for Complete the look.</dd></div>
+  <div><dt>Translation</dt><dd>Shopify's free Translate and Adapt app, or <span class="path">Online Store &gt; Themes &gt; ... &gt; Edit default theme content</span>. See <a href="translations.html">Translations and right-to-left</a>.</dd></div>
+  <div><dt>Email marketing</dt><dd>The theme's signup forms add customers with email marketing consent to Shopify. Email apps pick them up from there.</dd></div>
+</dl>
+
+<h2 id="speed">Apps and speed</h2>
+<p>Each app adds its own code to your pages. If your store slows down, turn app embeds off one at a time in the editor and compare. Remove the blocks and embeds of apps you uninstall.</p>
+<p>Questions about an app's own block or embed belong with its developer. If something looks like a theme problem, write to us and we will say so; see <a href="support.html">Support</a>.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html" aria-current="page">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

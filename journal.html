@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal | Barathea theme</title>
+<meta name="description" content="Set up a journal in Barathea: the blog page, plain articles and shoppable story templates with pictures, chapters and products between the text.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Set up your store</p>
+  <h1>Journal</h1>
+  <p class="lede">Your journal is a Shopify blog. Barathea gives it a quiet index page and a story template that places pictures, chapters and the products in them between the paragraphs.</p>
+</header>
+
+<h2 id="blog">The blog page</h2>
+<p>Create a blog in <span class="path">Online Store &gt; Blog posts &gt; Manage blogs</span>, for example "Journal". Its page uses the <strong>Journal</strong> section: the newest story opens the first page, larger and with its standfirst, then the rest in a grid. Choose stories per page, the picture shape, and whether topics, date, author and excerpt show.</p>
+
+<h2 id="writing">Writing a story</h2>
+<dl class="rows">
+  <div><dt>Title</dt><dd>The headline.</dd></div>
+  <div><dt>Excerpt</dt><dd>The standfirst under the headline, and the text on cards.</dd></div>
+  <div><dt>Image</dt><dd>The cover. Give it alt text; with <strong>Show the cover caption</strong> on, the alt text is printed as its caption.</dd></div>
+  <div><dt>Tags</dt><dd>Shown as topics, and usable by the Journal posts section to show one topic only.</dd></div>
+  <div><dt>Author</dt><dd>Shown when <strong>Show author</strong> is on.</dd></div>
+</dl>
+
+<h2 id="templates">Two article templates</h2>
+<dl class="rows">
+  <div><dt><code>article</code> (default)</dt><dd>The Story section with the whole article text in one block. For news and short posts.</dd></div>
+  <div><dt><code>article.story</code></dt><dd>A shoppable story: the article text in parts, with a picture, a chapter heading, a Shop the look, a pull quote, two pictures and a row of products between them. After the story, a Shop the look section ("From this story") and Journal posts ("More from the journal").</dd></div>
+</dl>
+
+<h2 id="parts">Splitting the text into parts</h2>
+<p>In the article editor, add a horizontal line wherever a picture or products should go. In the story template, each <strong>Article text</strong> block shows one part: part 1 is the text before the first line, part 2 the text after it, and so on. Part 0 shows the whole article. Put your blocks between the parts in the theme editor.</p>
+<p>The story's blocks are: Article text, Chapter heading, Text, Picture, Two pictures, Pull quote, Products (inline cards, or a scrolling row), Shop the look (a picture with the products in it and their count), Custom Liquid, and app blocks.</p>
+
+<h2 id="per-story">A template per story</h2>
+<p>A template carries one set of pictures and products, so each shoppable story needs its own: in the theme editor, choose <strong>Create template</strong> based on <strong>story</strong>, fill its pictures and products, then pick it for the article under <strong>Theme template</strong>. Stories that only need text and their cover can share the plain <code>article</code> template.</p>
+<div class="callout">
+  <p class="label">Keep the count true</p>
+  <p>In a Shop the look block or section, add exactly the products the picture shows. The count ("2 in this picture") is counted from the products you add.</p>
+</div>
+
+<h2 id="elsewhere">The journal elsewhere</h2>
+<p>The <a href="sections.html#section-journal-row">Journal posts</a> section shows the latest two to four stories on any page, from one blog and optionally one tag. Search lists stories in their own tab.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html" aria-current="page">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

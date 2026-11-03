@@ -1,0 +1,7 @@
+# GitHub Pages runs Jekyll on this folder by default. The pages are finished HTML without
+# front matter, so Jekyll copies them unchanged. Folders that start with an underscore
+# (_tools) are never published; the two upkeep notes are left out here in case they are
+# uploaded too.
+exclude:
+  - README.md
+  - PUBLISH.md

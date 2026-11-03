@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility and performance | Barathea theme</title>
+<meta name="description" content="How Barathea is built for keyboard and screen reader use and for speed, and what you can do to keep your store that way.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Good to know</p>
+  <h1>Accessibility and performance</h1>
+  <p class="lede">Barathea is built so every shopper can use it, by keyboard, screen reader or touch, and so pages load only what they need.</p>
+</header>
+
+<h2 id="accessibility">Accessibility</h2>
+<h3>What the theme does</h3>
+<ul>
+  <li>A <strong>Skip to content</strong> link, one main heading per page and heading levels that never skip.</li>
+  <li>A visible two-tone focus ring in every color scheme, so it shows on light and dark grounds and over pictures.</li>
+  <li>Menus, panels, drawers and dialogs work by keyboard. Dialogs open in the browser's top layer, close with Escape and return focus to where it was; the page behind does not scroll.</li>
+  <li>Everything you can point at, you can also reach by keyboard: the rings in Shop the look, the index preview, swatches (one stop per card, arrow keys between colors) and quick add.</li>
+  <li>Sold-out sizes are named for screen readers ("FR 34, sold out, ask about this size"). Bag and filter updates are announced politely.</li>
+  <li>Touch targets are at least 44 px; swatch chips sit on 24 px targets.</li>
+  <li>Body text is never smaller than 16 px on phones, and interface text never smaller than 12 px.</li>
+  <li>Every color scheme in both presets was checked for contrast: at least 4.5:1 for text and 3:1 for field and control lines.</li>
+  <li>Field labels sit above their fields, and errors are written in words.</li>
+  <li>With reduced motion asked for on the device, nothing moves and nothing plays by itself. Films always have a pause button.</li>
+  <li>Without JavaScript, the core still works: a product can be added to the bag (a plain size list stands in), and forms send.</li>
+</ul>
+<h3>What you can do</h3>
+<ul>
+  <li>Give every picture alt text that says what it shows (in <span class="path">Content &gt; Files</span> and on each product's media). Decorative pictures can stay empty.</li>
+  <li>Keep text out of pictures; use the sections' own headings and text.</li>
+  <li>If you change colors, keep text at 4.5:1 against its ground. The editor does not check contrast for you.</li>
+  <li>Give films a short text alternative in their Description setting.</li>
+  <li>Write link labels that make sense alone ("Shop the coats", not "Click here").</li>
+</ul>
+
+<h2 id="performance">Performance</h2>
+<h3>What the theme does</h3>
+<ul>
+  <li>No frameworks and no scripts from other sites. Scripts load deferred, and anything needed only on use (search, Client care, the index preview, quick add, film players) loads on the first pointer, touch or focus, or when the browser is idle.</li>
+  <li>Each page loads only its own stylesheets. The styles for the first screen are inline, at 7.9 KB of a 14 KB budget.</li>
+  <li>Pictures come in the right size for each screen (375 to 2400 px wide), carry their width and height so nothing jumps, and load lazily below the first screen. The first large picture loads first.</li>
+  <li>YouTube and Vimeo films load nothing until a shopper presses play. Shopify-hosted films play muted on a loop only if you ask, and pause off screen.</li>
+  <li>At most four font files per page, and two of them are preloaded.</li>
+</ul>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Code loaded on the first visit, compressed (version 1.0.0)</caption>
+  <thead><tr><th scope="col">Page</th><th scope="col">Stylesheets</th><th scope="col">Scripts</th><th scope="col">Script budget</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Home</th><td data-label="Stylesheets">20.3 KB</td><td data-label="Scripts">17.7 KB</td><td data-label="Script budget">20 KB</td></tr>
+    <tr><th scope="row">Collection</th><td data-label="Stylesheets">19.2 KB</td><td data-label="Scripts">18.9 KB</td><td data-label="Script budget">25 KB</td></tr>
+    <tr><th scope="row">Product</th><td data-label="Stylesheets">20.1 KB</td><td data-label="Scripts">24.2 KB</td><td data-label="Script budget">30 KB</td></tr>
+    <tr><th scope="row">Search</th><td data-label="Stylesheets">19.2 KB</td><td data-label="Scripts">17.4 KB</td><td data-label="Script budget">25 KB</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Stylesheets stay under a 40 KB budget per page. These figures are the theme's own code before apps.</p>
+<h3>What you can do</h3>
+<ul>
+  <li>Upload pictures at least 1600 px on the long side (2400 px for full-width ones) and let Shopify size them; set focal points instead of cropping by hand.</li>
+  <li>Prefer a still picture over an autoplaying film at the top of the home page.</li>
+  <li>Keep apps to the ones you use, and remove the blocks and embeds of apps you uninstall. Apps are the most common reason a store slows down.</li>
+  <li>Keep Custom Liquid short; code there loads on every page it sits on.</li>
+</ul>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html" aria-current="page">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

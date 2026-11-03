@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting started | Barathea theme</title>
+<meta name="description" content="Install Barathea, choose a preset, bring in your content in the right order and set the first theme settings.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Start</p>
+  <h1>Getting started</h1>
+  <p class="lede">Install the theme, choose a look, bring in your content in an order that saves rework, then set the handful of settings that make the theme yours.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#install">Install</a></li>
+    <li><a href="#preset">Choose a preset</a></li>
+    <li><a href="#import-order">Import order</a></li>
+    <li><a href="#first-settings">First settings</a></li>
+    <li><a href="#before-publish">Before you publish</a></li>
+    <li><a href="#moving">Moving from another theme</a></li>
+    <li><a href="#updates">Updating safely</a></li>
+  </ul>
+</nav>
+
+<h2 id="install">Install</h2>
+<ol class="steps">
+  <li>Open Barathea in the Shopify Theme Store and choose <strong>Try theme</strong>. Shopify adds a copy to <span class="path">Online Store &gt; Themes</span> that you can customize and preview with your own products before you buy.</li>
+  <li>Choose <strong>Buy theme</strong> from the theme library or the theme editor when you are ready. A purchase is for one store.</li>
+  <li>Choose <strong>Publish</strong> when you want shoppers to see it. Until then your current theme stays live.</li>
+</ol>
+<p>Always work on a copy of a live theme: in <span class="path">Online Store &gt; Themes</span>, open the <strong>...</strong> menu and choose <strong>Duplicate</strong>. Publishing your previous theme again is always the way back.</p>
+
+<h2 id="preset">Choose a preset</h2>
+<p>When you add the theme you choose its look. The preset sets colors, fonts, card style, layout values and its own templates for the home page, collections, lines, the Collections page and products. It never fills in your content: menus, pages, collections and Client care numbers are yours to set.</p>
+<dl class="rows">
+  <div><dt>Barathea</dt><dd>A fashion house with its own lines: portrait pictures with people in them, ink sections, a night banner, lines in the menu. <a href="presets.html#barathea">More</a></dd></div>
+  <div><dt>Plaster</dt><dd>A multi-designer shop, mostly bags and shoes: square packshots on white, the designer above every name, a Designers index A-Z. <a href="presets.html#plaster">More</a></dd></div>
+</dl>
+<p>To move an installed copy to the other look, add the theme again with the other preset (your products, collections and pages stay as they are), or change the settings listed in <a href="presets.html#switch">Switching looks by hand</a>.</p>
+
+<h2 id="import-order">Import order: content first, then the theme</h2>
+<p>The theme reads your collections, pages and menus, so the editor's pickers can only find what already exists. Bring things in in this order:</p>
+<ol class="steps">
+  <li><strong>Store settings.</strong> Markets and currencies, shipping, and your policies in <span class="path">Settings &gt; Policies</span>. The theme shows your refund and shipping policies wherever a promise links to them.</li>
+  <li><strong>Metafields.</strong> In <span class="path">Settings &gt; Custom data &gt; Products</span>, turn on Shopify's standard definitions <strong>Product subtitle</strong> (<code>descriptors.subtitle</code>) and <strong>Care guide</strong> (<code>descriptors.care_guide</code>). If you want them, create <code>custom.fit_line</code> (single line text) and <code>custom.dimensions</code> (multi-line text). See <a href="product-setup.html#metafields">Metafields</a>.</li>
+  <li><strong>Filters.</strong> Install Shopify's free Search and Discovery app and add filters: Availability, Price, Size, Color and <strong>Product type</strong> (line pages link their index through it). A multi-designer shop adds Vendor, labeled "Designer".</li>
+  <li><strong>Products</strong>, with pictures in order, variant pictures for each color, metafields, tags and a template where needed. See <a href="product-setup.html">Product setup</a>.</li>
+  <li><strong>Collections</strong>, each with a picture and a description: your lines (or designers) and your categories. See <a href="collections-and-lines.html">Collections and lines</a>.</li>
+  <li><strong>Pages</strong>, each with its template (About, Client care, Contact, Boutiques, FAQ, Size guide, Shipping and returns), and a blog for your journal. See <a href="pages.html">Pages</a> and <a href="journal.html">Journal</a>.</li>
+  <li><strong>Menus</strong> in <span class="path">Online Store &gt; Navigation</span>: the main menu (up to three levels), a <strong>Lines</strong> menu that links to your line or designer collections, a footer menu and, if you like, a short Popular searches menu.</li>
+  <li><strong>The theme</strong>: the first settings below, then the home page, then a template per line where you want a story picture on it.</li>
+  <li><strong>Check</strong> on a phone and a computer, then place a test order.</li>
+</ol>
+
+<h2 id="first-settings">First settings</h2>
+<p>Open <span class="path">Online Store &gt; Themes &gt; Customize</span>, then <strong>Theme settings</strong>. In this order:</p>
+<dl class="rows">
+  <div><dt>Logo</dt><dd>Your logo and a version for dark grounds and text over pictures, and the favicon. Without a logo the header prints your store name.</dd></div>
+  <div><dt>Client care</dt><dd>Phone number and hours, a message link, an email address, a booking link, and your Contact, Boutiques and Size guide pages. Every item hides while its setting is empty; with nothing filled in, the Client care link hides too. See <a href="signature-features.html#client-care">Client care with context</a>.</dd></div>
+  <div><dt>Lines</dt><dd>Pick your Lines menu. A product's line, shown above its name, is the first collection in that menu that holds it. See <a href="collections-and-lines.html">Collections and lines</a>.</dd></div>
+  <div><dt>Product page</dt><dd>Your size system (for example FR, IT, EU or US), the default size guide page and the product type rules that send coats, shoes and rings to the right part of the guide.</dd></div>
+  <div><dt>Shipping and returns</dt><dd>Delivery times, returns windows and duties for up to three groups of countries and for every other country; the final sale tag. See <a href="signature-features.html#promises">Promises per market</a>.</dd></div>
+  <div><dt>Bag</dt><dd>The three promises shown in the bag and under Add to bag. They are promises to your customers: change or remove any your store does not keep.</dd></div>
+  <div><dt>Header</dt><dd>In the header section: the menu, whether the header sits over the first picture of the home page, Show lines in menu panels, and a Menu panel block with a first picture for each top-level menu item.</dd></div>
+  <div><dt>Footer note</dt><dd>One small last line, for example "Images generated with AI." when that is true of your pictures.</dd></div>
+</dl>
+
+<h2 id="before-publish">Before you publish</h2>
+<ul>
+  <li>Preview on a phone and a computer (the eye icon in the editor switches between them), or send a preview link from <span class="path">Online Store &gt; Themes &gt; ... &gt; Share preview</span>.</li>
+  <li>Open a product with colors and sizes, choose a sold-out size, open the size guide, add to the bag and open Client care from the product page.</li>
+  <li>Open a line page and a category page with filters, the search, and a page made from each page template you use.</li>
+  <li>Place a test order with your payment provider's test mode, or go through checkout up to payment.</li>
+</ul>
+
+<h2 id="moving">Moving from another theme</h2>
+<p>Products, collections, pages, blog posts, menus, metafields, customers and orders belong to your store, so they carry over. Apps stay installed, but their blocks need to be added again where you want them, and their embeds turned on again in the theme editor's <strong>App embeds</strong> panel. Sections, theme settings, code edits and templates made for your old theme do not carry over: products or pages that used an old template go back to the default template until you pick one of Barathea's.</p>
+
+<h2 id="updates">Updating safely</h2>
+<p>Versions are numbered X.Y.Z. A change in Z fixes problems and makes small additions; a change in Y adds features and takes nothing away; a change in X may change how something is set up, and the <a href="changelog.html">changelog</a> says what to check.</p>
+<ol class="steps">
+  <li>Read the changelog for every version between yours and the new one. Your version shows under the theme name in <span class="path">Online Store &gt; Themes</span>.</li>
+  <li>Keep your current theme until the updated copy has been live for a few days. Publishing it again is your way back.</li>
+  <li>Note any code edits. They are not carried into a new version; make them again on the new copy.</li>
+  <li>When Shopify shows <strong>Update available</strong>, add the new version. It arrives as a copy with your settings, sections, blocks and content.</li>
+  <li>Preview the copy: the home page, a collection, a product with sizes, the bag and the footer, on a phone and a computer. Check your app blocks. Then publish.</li>
+</ol>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html" aria-current="page">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

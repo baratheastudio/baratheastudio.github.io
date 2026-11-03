@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collections and lines | Barathea theme</title>
+<meta name="description" content="Line collections, the Lines menu, the shared line template and per-line templates, category pages with tiles, filters and the Designers index in Barathea.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Set up your store</p>
+  <h1>Collections and lines</h1>
+  <p class="lede">A line is a named group of products: a house line, a capsule, or a designer. Lines give products their top line, fill the menu panels and get pages of their own.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#lines">Lines and the Lines menu</a></li>
+    <li><a href="#line-template">The line template</a></li>
+    <li><a href="#per-line-templates">Per-line templates</a></li>
+    <li><a href="#categories">Category pages</a></li>
+    <li><a href="#tiles">Tiles in the grid</a></li>
+    <li><a href="#filters">Filters and sorting</a></li>
+    <li><a href="#collections-page">The Collections page</a></li>
+  </ul>
+</nav>
+
+<h2 id="lines">Lines and the Lines menu</h2>
+<ol class="steps">
+  <li>Make one collection per line (manual, or smart by tag or by vendor for designers). Give each a portrait picture and a description of 40 to 60 words; the first sentence also shows in short lists.</li>
+  <li>In <span class="path">Online Store &gt; Navigation</span>, make a menu named "Lines" (or "Designers") that links to those collections. Links nested under a top link count too.</li>
+  <li>Pick it in <span class="path">Theme settings &gt; Lines &gt; Lines menu</span>.</li>
+</ol>
+<p>A product's line is the first collection in that menu that holds it, top links first, in menu order. Choose what shows for products in no line with <strong>When a product is in no line</strong>: the vendor, the product type or nothing.</p>
+<p>The line then shows:</p>
+<ul>
+  <li>above the name on cards (<span class="path">Product cards &gt; Top line: Line</span>) and on product pages (the Top line block), linked to the line;</li>
+  <li>in every menu panel and the phone menu (the header's <strong>Show lines in menu panels</strong>, with your own heading such as Lines or Designers);</li>
+  <li>as Other lines at the end of each line page (<a href="sections.html#section-collection-links">Collection links</a> set to Lines menu, which leaves out the line being shown).</li>
+</ul>
+
+<h2 id="line-template">The line template</h2>
+<p>Give each line collection the template <strong>line</strong> (in the collection's admin page, under Theme template). One template serves every line: everything that differs per line comes from the collection itself.</p>
+<dl class="rows">
+  <div><dt>Line intro</dt><dd>The line's name, intro (its description, or text you type) and picture, with an index of what the line holds: its product types with counts, or a menu. Pointing at an item swaps the picture; each item opens the grid filtered to that type, which needs the Product type filter in Search and Discovery. In a dark scheme and first on the page, the header can sit over it.</dd></div>
+  <div><dt>Service note</dt><dd>One sentence in the service voice that opens Client care with the line as context. The template ships "Ask an adviser about fit and alterations"; write one that is true for your house, for example "Every coat comes with its first alteration, free".</dd></div>
+  <div><dt>Product grid</dt><dd>The line's products. In the Barathea look it holds a tall Shop the look tile after card 4 and a picture row after card 11; both print nothing until you fill them.</dd></div>
+  <div><dt>Other lines</dt><dd>The rest of your Lines menu.</dd></div>
+</dl>
+
+<h2 id="per-line-templates">Per-line templates</h2>
+<p>A shared template carries one set of pictures, so a tile's picture and heading, or a Shop the look with rings, would show on every line. When you want a story picture on a line page, give that line a template of its own:</p>
+<ol class="steps">
+  <li>In the theme editor, open the template menu at the top, choose <strong>Create template</strong>, base it on <strong>line</strong> and name it after the line (for example <code>line-facing</code>).</li>
+  <li>Fill its Shop the look tile (picture, the products in it, top line, heading, link) and its picture row.</li>
+  <li>In the collection's admin page, set its Theme template to the new template.</li>
+</ol>
+<p>On the shared template, a Shop the look section set to <strong>Products: This collection</strong> uses each line's own picture and products, prints no rings and counts "From this line". With a template of its own, the section can carry its own picture and rings.</p>
+<p>Category pages that tell a story (for example Women, Men or Bags) work the same way: make a template based on <strong>collection</strong> and fill its tiles there.</p>
+
+<h2 id="categories">Category pages</h2>
+<p>Every other collection uses the default <strong>collection</strong> template: the Collection banner (compact, or with a picture) and the product grid. In the Barathea look the grid holds an image tile after card 4 and a picture row after card 11, both empty until you fill them.</p>
+
+<h2 id="tiles">Tiles in the grid</h2>
+<p>The Product grid takes up to six tile blocks: <strong>Image tile</strong>, <strong>Text tile</strong>, <strong>Shop the look tile</strong> and <strong>Video tile</strong>.</p>
+<ul>
+  <li><strong>Place after product</strong> counts products on each load; a full-row tile starts on the next free row.</li>
+  <li><strong>Shape</strong>: tall (one column, two rows), a full row, or one card. On phones: the same shape, one card, or hidden.</li>
+  <li>By default a tile shows on the first load only, and hides while filters are applied, so it never lands among filtered results.</li>
+</ul>
+
+<h2 id="filters">Filters and sorting</h2>
+<p>Filters come from Shopify's free Search and Discovery app; without it, availability and price are available. A good start for fashion:</p>
+<ul>
+  <li>Availability, Price, Size and Color (shown as swatches when your colors have swatch data);</li>
+  <li><strong>Product type</strong>, which the line intro's index links through;</li>
+  <li>Vendor, labeled "Designer", for a multi-designer shop.</li>
+</ul>
+<p>In the grid's settings: apply filters with an Apply button or on every change, how many values show before More, value counts, sorting, a filter bar that stays in view on phones, and up to five quick filters as buttons. Loading: a Load more button, loading while scrolling, or numbered pages.</p>
+<p>When a collection or a filtered view is empty, the grid suggests the collections you pick in <strong>Collections to suggest</strong>.</p>
+
+<h2 id="collections-page">The Collections page</h2>
+<p>The page at <code>/collections</code> uses the <strong>Collection list page</strong> section:</p>
+<ul>
+  <li><strong>Grid of images</strong>: collection pictures in 2 to 4 columns.</li>
+  <li><strong>Index A-Z</strong>: names grouped by letter, with letter jumps and, on wide screens, one preview picture that follows the name under the pointer or focus. This is the Designers page of the Plaster look.</li>
+</ul>
+<p>Set <strong>Collections</strong> to <strong>From a menu</strong> and pick your Lines or Designers menu to list only those.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html" aria-current="page">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

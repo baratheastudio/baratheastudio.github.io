@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ | Barathea theme</title>
+<meta name="description" content="Answers to common questions about setting up Barathea: Client care, sizes, express checkout, filters, lines, swatches, promises, final sale and more.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Help</p>
+  <h1>Frequently asked questions</h1>
+  <p class="lede">The questions merchants ask most while setting up. If yours is not here, write to us: see <a href="support.html">Support</a>.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#products">Products and sizes</a></li>
+    <li><a href="#lists">Collections and lines</a></li>
+    <li><a href="#bag">Bag and promises</a></li>
+    <li><a href="#license">License and updates</a></li>
+  </ul>
+</nav>
+
+<h2 id="setup">Setup</h2>
+<h3 id="apps-needed">Does the theme need any apps?</h3>
+<p>No. Everything in these docs works without an app. Filters and the Complete the look products come from Shopify's free Search and Discovery app, which Shopify makes.</p>
+<h3 id="client-care-hidden">The Client care link does not show.</h3>
+<p>It hides until at least one Client care setting is filled in. Add a phone number, a message link, an email address or a contact page in <span class="path">Theme settings &gt; Client care</span>, and check that <strong>Show the Client care link</strong> is on in the header.</p>
+<h3 id="header-over">How do I put the header over the first picture?</h3>
+<p>In the header section, set <strong>Over the first section on the home page</strong> to Phones only or All sizes. Use it when the home page opens with a full-width picture. A line intro in a dark scheme placed first on a line page gets the same header.</p>
+<h3 id="no-logo">The header shows my store name instead of a logo.</h3>
+<p>Add your logo in <span class="path">Theme settings &gt; Logo</span>, and a light version as <strong>Logo on dark grounds</strong> for the header over pictures and on ink sections.</p>
+<h3 id="selectors">The country or language selector does not show.</h3>
+<p>It appears in the footer and the phone menu when your store sells in more than one country (<span class="path">Settings &gt; Markets</span>) or language (<span class="path">Settings &gt; Languages</span>), and the selector is on in the Footer and Header sections.</p>
+<h3 id="account">The account icon does not show.</h3>
+<p>Turn on customer accounts in <span class="path">Settings &gt; Customer accounts</span>.</p>
+<h3 id="follow-on-shop">Follow on Shop does not show.</h3>
+<p>It needs Shop Pay turned on in your payment settings, and <strong>Show Follow on Shop</strong> on in the Footer or Email signup section.</p>
+<h3 id="booking">Can shoppers book a time?</h3>
+<p>Not in the theme: Shopify does not allow themes to take bookings. Arrange a visit sends shoppers to your contact form with the visit topic, or to your booking app's page if you add a Booking link. See <a href="signature-features.html#arrange-a-visit">Arrange a visit</a>.</p>
+<h3 id="wish-list">Is there a wish list?</h3>
+<p>Not built in; wish lists are app work. See <a href="apps.html">Apps that pair well</a>.</p>
+
+<h2 id="products">Products and sizes</h2>
+<h3 id="select-a-size">Why does Add to bag say "Select a size"?</h3>
+<p>Nothing is added until the shopper chooses a size. The button moves to the sizes when pressed. A product with only one size in stock has it chosen for the shopper (<span class="path">Theme settings &gt; Product page &gt; Select a size for the shopper</span>). Only options named in <strong>Size option names</strong> (same place) count as a size, and gift cards never ask for one. If a product without sizes asks for a size, its option name is on that list: remove it there.</p>
+<h3 id="express-dimmed">Why are the express checkout buttons dimmed?</h3>
+<p>They wait for a size, with the line "Select a size to use express checkout.", so nobody buys a size they did not pick. To let them work at once, turn off <strong>Wait for a size before express checkout</strong> in <span class="path">Theme settings &gt; Product page</span>. Add to bag still waits.</p>
+<h3 id="express-missing">Express checkout buttons do not show at all.</h3>
+<p>They depend on the payment methods turned on in <span class="path">Settings &gt; Payments</span>, and on <strong>Show accelerated checkout buttons</strong> in the Buy buttons block.</p>
+<h3 id="sold-out-still-buyable">A sold-out size can still be bought.</h3>
+<p>The variant's stock is not tracked, or <strong>Continue selling when out of stock</strong> is on. Turn on <strong>Track quantity</strong> and turn the other off.</p>
+<h3 id="size-label">How do I show "Size (FR)"?</h3>
+<p>Type FR into <strong>Size system label</strong> in <span class="path">Theme settings &gt; Product page</span>. A template can use its own label, for example <code>mm</code> for rings, in its Colors and sizes block.</p>
+<h3 id="size-guide-link">The Size guide link does not show.</h3>
+<p>Pick a size guide page in the Size guide block, in <span class="path">Theme settings &gt; Product page</span> or in Client care. See <a href="product-setup.html#size-guide">Size guide</a>.</p>
+<h3 id="color-count">Cards show "3 colors" instead of swatches.</h3>
+<p>Your color option has no swatch data. Link it to a color metafield or give each value a swatch in the product; see <a href="product-setup.html#swatches">Swatches</a>. Or the Plaster look is in use, where <strong>Colors</strong> is set to Number of colors.</p>
+<h3 id="gallery-colors">The gallery shows every color's pictures.</h3>
+<p>Turn on <strong>Show only the chosen color's pictures</strong> in Product information, set a variant picture for each color, and order the media by color. See <a href="product-setup.html#media">Pictures per color</a>.</p>
+<h3 id="material-line">How do I add the line under the product name?</h3>
+<p>Fill the product's Subtitle metafield (<code>descriptors.subtitle</code>), after turning on the standard definition in <span class="path">Settings &gt; Custom data</span>. See <a href="product-setup.html#metafields">Metafields</a>.</p>
+<h3 id="rings-no-engraving">Earrings show the Personalization field.</h3>
+<p>Give earrings and chains the <code>product.jewelry-plain</code> template; it is the jewelry page without Personalization and without the Size guide link.</p>
+
+<h2 id="lists">Collections and lines</h2>
+<h3 id="filters-missing">Filters do not show on my collection pages.</h3>
+<p>Add filters in the Search and Discovery app (Filters, then Add filter), and check that <strong>Show filters</strong> is on in the Product grid.</p>
+<h3 id="line-index">The line intro's index lists nothing, or its links show every product.</h3>
+<p>The index lists the product types in the line and links through the Product type filter. Fill in product types and add the Product type filter in Search and Discovery.</p>
+<h3 id="wrong-line">A product shows the wrong line, or none.</h3>
+<p>A product's line is the first collection in your Lines menu that holds it, in menu order. Check that the menu is picked in <span class="path">Theme settings &gt; Lines</span> and that the product is in the line's collection. For products in no line, choose what shows in <strong>When a product is in no line</strong>.</p>
+<h3 id="rings-missing">Shop the look shows no rings on a line page.</h3>
+<p>On a template shared by several lines, a Shop the look set to This collection prints no rings and counts "From this line". Give the line <a href="collections-and-lines.html#per-line-templates">its own template</a> and set each product's point there. On phones, rings are hidden when a phone picture is set.</p>
+<h3 id="tile-hidden">A grid tile does not show.</h3>
+<p>Tiles print nothing until they have a picture (or text, or a film), show on the first load only by default, and hide while filters are applied. Check its <strong>Place after product</strong> number against the number of products.</p>
+<h3 id="sale-badge">Sale badges do not show.</h3>
+<p>The Barathea look sets <strong>Sale badge</strong> to None in <span class="path">Theme settings &gt; Product cards</span>; choose Word or Percentage off. A Sale badge also needs a compare-at price higher than the price, allowed in the shopper's market.</p>
+<h3 id="compare-hidden">Some shoppers do not see the compare-at price.</h3>
+<p>Check <span class="path">Theme settings &gt; Prices</span>: compare-at prices can be limited to some countries, to your store currency, or hidden for products with a tag.</p>
+
+<h2 id="bag">Bag and promises</h2>
+<h3 id="promises-wrong">The bag promises "First alteration free", which we do not offer.</h3>
+<p>Change or remove each promise in <span class="path">Theme settings &gt; Bag</span>. An empty field uses the theme's wording; a single dash (-) leaves that promise out; <strong>Show the promises</strong> off removes the line.</p>
+<h3 id="delivery-line">The delivery line does not show in the bag.</h3>
+<p>Fill in a delivery time, a returns window or duties for the shopper's country, or for Every other country, in <span class="path">Theme settings &gt; Shipping and returns</span>. A part left empty is not shown.</p>
+<h3 id="final-sale-line">Why does a product say "Final sale"?</h3>
+<p>It has your final sale tag (default <code>final-sale</code>), is in a final sale collection, or is personalized while <strong>Personalized items are final sale</strong> is on. See <a href="signature-features.html#final-sale">Final sale</a>.</p>
+<h3 id="bag-page">How do I send shoppers to the bag page instead of the drawer?</h3>
+<p>In <span class="path">Theme settings &gt; Bag</span>, set <strong>After adding to the bag</strong> to Go to the bag page, or to Show a short confirmation.</p>
+<h3 id="discount-codes">Where do shoppers enter a discount code?</h3>
+<p>At checkout. Discounts already applied show in the bag.</p>
+
+<h2 id="license">License and updates</h2>
+<h3 id="stores">Can I use the theme on more than one store?</h3>
+<p>A purchase is for one store. Each store needs its own.</p>
+<h3 id="update">How do I update without losing my work?</h3>
+<p>Your settings and content move to the new version; code edits do not. See <a href="getting-started.html#updates">Updating safely</a>.</p>
+<h3 id="code">Can I edit the code?</h3>
+<p>Yes, in <span class="path">Online Store &gt; Themes &gt; ... &gt; Edit code</span>, on a duplicate first. Code edits are not covered by support and are not carried into updates.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html" aria-current="page">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

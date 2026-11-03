@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presets: Barathea and Plaster | Barathea theme</title>
+<meta name="description" content="The two looks that ship with Barathea, what differs between them, and how to get the look of each demo store.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Start</p>
+  <h1>Presets</h1>
+  <p class="lede">Two looks ship with the theme: Barathea, for a fashion house with its own lines, and Plaster, for a shop that sells many designers. Both use the same sections and settings; they differ in values and templates.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#barathea">Barathea</a></li>
+    <li><a href="#plaster">Plaster</a></li>
+    <li><a href="#settings">Settings that differ</a></li>
+    <li><a href="#schemes">Color schemes</a></li>
+    <li><a href="#templates">Templates that differ</a></li>
+    <li><a href="#get-the-look">Getting the demo look</a></li>
+    <li><a href="#switch">Switching looks by hand</a></li>
+  </ul>
+</nav>
+
+<p>A preset sets the look: colors, fonts, the product card, layout values, the header and footer groups and a set of templates. It never sets store content. Menus, pages, collections, Client care numbers, delivery times and your words stay yours, so both demo stores were filled by hand; their checklists are summed up below.</p>
+
+<h2 id="barathea">Barathea</h2>
+<p>The lead look, named like the theme. A fashion house: clothing, bags and shoes in a few named lines, with some jewelry. Demo store: Halvarde (four lines: Facing, Newel, Evenfall and Lintel).</p>
+<ul>
+  <li><strong>Grounds:</strong> white pages with ink sections in turn (the home opener, the night band, the Collection index, the line intro, Complete the look and the footer). The announcement bar uses the ultramarine season scheme.</li>
+  <li><strong>Type:</strong> Newsreader for names, headings and body; Instrument Sans for labels, menu, buttons and prices, in capitals.</li>
+  <li><strong>Service voice:</strong> Lapis blue italic, with a small drawn glyph, for every link to a person or a place.</li>
+  <li><strong>Header:</strong> sits over the home page's first picture at every screen size, and over an ink line intro; it reappears when you scroll up. Menu panels list your lines.</li>
+  <li><strong>Cards:</strong> portrait 4:5 pictures from edge to edge, the line above the name, color swatches, no sale badge.</li>
+  <li><strong>Home:</strong> Shop the look (spread, ink), Large text, Featured products (New in), Image banner as the night band with its products, Product spotlight, Collection index (ink), Two images.</li>
+  <li><strong>Line pages:</strong> an ink line intro with the line's product types, a service note, a three-column grid with a tall Shop the look tile after card 4 and a picture row after card 11, then Other lines.</li>
+  <li><strong>Client care panel:</strong> call, message, write to us, Arrange a visit, boutiques, size guide.</li>
+</ul>
+
+<h2 id="plaster">Plaster</h2>
+<p>A multi-designer shop of bags and shoes. Demo store: Ostrel (six designers: Belsade, Ilvero, Odrane, Quarne, Tessaly, Wenlow).</p>
+<ul>
+  <li><strong>Grounds:</strong> concrete page ground, white quiet ground, ink and stone. No accent color: the service voice is ink italic with its glyph.</li>
+  <li><strong>Type:</strong> Libre Caslon Text for names, headings and body; Archivo for labels, menu, buttons and prices. Smaller headings.</li>
+  <li><strong>Header:</strong> solid white and always in view, never over a picture. The announcement bar is ink and shows on the home page too.</li>
+  <li><strong>Cards:</strong> square packshots shown whole on a white ground, the designer (vendor) above the name, the second picture on hover, a count of colors instead of swatches, and a Sale badge.</li>
+  <li><strong>Home:</strong> Image banner (16:9), Featured products (New in), Collection index named Designers, Two images, Featured products (Shoes), Feature with text on the stone ground.</li>
+  <li><strong>Designers:</strong> the Collections page is Index A-Z with letter jumps and a preview picture. Designer pages use the line template with a light line intro, a four-column grid without tiles, and More designers.</li>
+  <li><strong>Client care panel:</strong> short: call, email, size guide.</li>
+</ul>
+
+<h2 id="settings">Settings that differ</h2>
+<p>Everything not listed here is the same in both presets.</p>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Theme settings set by each preset</caption>
+  <thead><tr><th scope="col">Setting</th><th scope="col">Barathea</th><th scope="col">Plaster</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Typography &gt; Interface font</th><td data-label="Barathea">Instrument Sans</td><td data-label="Plaster">Archivo</td></tr>
+    <tr><th scope="row">Typography &gt; Text font</th><td data-label="Barathea">Newsreader</td><td data-label="Plaster">Libre Caslon Text</td></tr>
+    <tr><th scope="row">Typography &gt; Heading size</th><td data-label="Barathea">Medium</td><td data-label="Plaster">Small</td></tr>
+    <tr><th scope="row">Colors &gt; Shade behind text over images</th><td data-label="Barathea">50%</td><td data-label="Plaster">30%</td></tr>
+    <tr><th scope="row">Layout &gt; Page width</th><td data-label="Barathea">1680 px</td><td data-label="Plaster">1600 px</td></tr>
+    <tr><th scope="row">Layout &gt; Side margin on large screens</th><td data-label="Barathea">40 px</td><td data-label="Plaster">32 px</td></tr>
+    <tr><th scope="row">Layout &gt; Space between sections</th><td data-label="Barathea">100%</td><td data-label="Plaster">80%</td></tr>
+    <tr><th scope="row">Buttons &gt; Secondary actions</th><td data-label="Barathea">Outline button</td><td data-label="Plaster">Text link</td></tr>
+    <tr><th scope="row">Lines &gt; When a product is in no line</th><td data-label="Barathea">Nothing</td><td data-label="Plaster">Vendor</td></tr>
+    <tr><th scope="row">Product cards &gt; Image shape</th><td data-label="Barathea">Portrait 4:5</td><td data-label="Plaster">Square</td></tr>
+    <tr><th scope="row">Product cards &gt; Image ground</th><td data-label="Barathea">Edge to edge</td><td data-label="Plaster">Color ground</td></tr>
+    <tr><th scope="row">Product cards &gt; Show second image on hover</th><td data-label="Barathea">Off</td><td data-label="Plaster">On</td></tr>
+    <tr><th scope="row">Product cards &gt; Top line</th><td data-label="Barathea">Line</td><td data-label="Plaster">Vendor</td></tr>
+    <tr><th scope="row">Product cards &gt; Sale badge</th><td data-label="Barathea">None</td><td data-label="Plaster">Word</td></tr>
+    <tr><th scope="row">Product cards &gt; Colors</th><td data-label="Barathea">Swatches</td><td data-label="Plaster">Number of colors</td></tr>
+    <tr><th scope="row">Bag &gt; First promise</th><td data-label="Barathea">Empty (the theme's wording, "First alteration free")</td><td data-label="Plaster">A single dash: left out</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Both presets keep low stock off, ask for a size before express checkout, show the buy bar on phones, open the bag drawer after an add, show gift options with gift wrapping unticked, and use square corners.</p>
+
+<h2 id="schemes">Color schemes</h2>
+<p>The four schemes keep the same roles in both looks: scheme 1 the page ground, scheme 2 a quiet ground, scheme 3 the night ground (dark; pictures and their grounds stay light), scheme 4 the season ground. Text over pictures uses scheme 3 in both.</p>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Barathea schemes</caption>
+  <thead><tr><th scope="col">Scheme</th><th scope="col">Background</th><th scope="col">Text</th><th scope="col">Buy button</th><th scope="col">Service links</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">1, page ground (white)</th><td data-label="Background"><code>#FFFFFF</code></td><td data-label="Text"><code>#16171A</code></td><td data-label="Buy button"><code>#16171A</code></td><td data-label="Service links"><code>#27347A</code></td></tr>
+    <tr><th scope="row">2, quiet ground (mist)</th><td data-label="Background"><code>#EEF0F2</code></td><td data-label="Text"><code>#16171A</code></td><td data-label="Buy button"><code>#16171A</code></td><td data-label="Service links"><code>#27347A</code></td></tr>
+    <tr><th scope="row">3, night (ink)</th><td data-label="Background"><code>#16171A</code></td><td data-label="Text"><code>#F4F4F2</code></td><td data-label="Buy button"><code>#F4F4F2</code></td><td data-label="Service links"><code>#AEB8EE</code></td></tr>
+    <tr><th scope="row">4, season (ultramarine)</th><td data-label="Background"><code>#2A3BB0</code></td><td data-label="Text"><code>#FFFFFF</code></td><td data-label="Buy button"><code>#FFFFFF</code></td><td data-label="Service links"><code>#FFFFFF</code></td></tr>
+  </tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Plaster schemes</caption>
+  <thead><tr><th scope="col">Scheme</th><th scope="col">Background</th><th scope="col">Text</th><th scope="col">Buy button</th><th scope="col">Service links</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">1, page ground (concrete)</th><td data-label="Background"><code>#F1F1EF</code></td><td data-label="Text"><code>#0E0E0E</code></td><td data-label="Buy button"><code>#0E0E0E</code></td><td data-label="Service links"><code>#0E0E0E</code></td></tr>
+    <tr><th scope="row">2, quiet ground (white)</th><td data-label="Background"><code>#FFFFFF</code></td><td data-label="Text"><code>#0E0E0E</code></td><td data-label="Buy button"><code>#0E0E0E</code></td><td data-label="Service links"><code>#0E0E0E</code></td></tr>
+    <tr><th scope="row">3, night (ink)</th><td data-label="Background"><code>#0E0E0E</code></td><td data-label="Text"><code>#F1F1EF</code></td><td data-label="Buy button"><code>#F1F1EF</code></td><td data-label="Service links"><code>#F1F1EF</code></td></tr>
+    <tr><th scope="row">4, season (stone)</th><td data-label="Background"><code>#E6E5E0</code></td><td data-label="Text"><code>#0E0E0E</code></td><td data-label="Buy button"><code>#0E0E0E</code></td><td data-label="Service links"><code>#0E0E0E</code></td></tr>
+  </tbody>
+</table>
+</div>
+<p>Every scheme also sets quiet text, hairlines, control lines and an image ground (white in all eight). Each pair of text and ground was checked for contrast: at least 4.5:1 for text and 3:1 for field lines. If you change colors, keep to the same ratios; the editor does not check them for you.</p>
+
+<h2 id="templates">Templates that differ</h2>
+<p>Plaster replaces eight of the theme's templates with its own; every other template is the same in both looks.</p>
+<dl class="rows">
+  <div><dt>Home (index)</dt><dd>Barathea: Shop the look, Large text, New in, the night band, Product spotlight, Collection index, Two images. Plaster: Image banner, New in, Designers, Two images, Shoes, Feature with text.</dd></div>
+  <div><dt>Collection</dt><dd>Barathea: three columns, an image tile after card 4 and a picture row after card 11 (both print nothing until you fill them). Plaster: four columns, 24 products per load, no tiles.</dd></div>
+  <div><dt>Collection, line</dt><dd>Barathea: ink line intro, service note, grid with a Shop the look tile and a picture row, Other lines. Plaster: white line intro, grid without tiles, More designers.</dd></div>
+  <div><dt>Collections page</dt><dd>Barathea: a grid of collection pictures. Plaster: Index A-Z titled Designers.</dd></div>
+  <div><dt>Product, Bag, Jewelry, Jewelry without personalization</dt><dd>The same blocks in both. Barathea: the gallery fills its frame (portrait, square for jewelry; tall on phones for the main product template), the line above the name, Complete the look on ink. Plaster: a square gallery that shows the whole picture, the designer above the name, Complete the look on the page ground.</dd></div>
+  <div><dt>Header and footer groups</dt><dd>Barathea: season-colored announcement bar (hidden on home, product and list pages), header over the first picture, the full Client care panel, ink footer. Plaster: ink announcement bar (also on home), solid white header, a short Client care panel (call, email, size guide), stone footer.</dd></div>
+</dl>
+
+<h2 id="get-the-look">Getting the demo look</h2>
+<p>The preset gives you the frame; the pictures and content make the look.</p>
+<h3>Barathea</h3>
+<ul>
+  <li>Portrait pictures (4:5) with people in them for products and campaigns, at least 1600 px on the long side. Set each picture's focal point in <span class="path">Content &gt; Files</span> so phone crops keep the subject.</li>
+  <li>Make a Lines menu of your line collections and pick it in <span class="path">Theme settings &gt; Lines</span>; give each line collection the <strong>line</strong> template, a picture and a 40 to 60 word description.</li>
+  <li>For a story picture on a line page, make a template for that line (see <a href="collections-and-lines.html#per-line-templates">Per-line templates</a>).</li>
+  <li>Fill the home Shop the look with a campaign picture and exactly the products in it, so "3 in this picture" is true.</li>
+</ul>
+<h3>Plaster</h3>
+<ul>
+  <li>Square packshots on a pure white background (<code>#FFFFFF</code>). The cards show the whole picture on a white ground, so any other background shows as a box.</li>
+  <li>Set each product's vendor to its designer, and make one collection per designer (a smart collection by vendor works). Give every designer collection a picture: the Designers index on phones shows small pictures only when every designer has one.</li>
+  <li>Make a Designers menu of those collections; pick it as the Lines menu and as the menu of the Collections page (Index A-Z, Collections from a menu).</li>
+  <li>Add the Vendor filter in Search and Discovery and label it "Designer".</li>
+</ul>
+
+<h2 id="switch">Switching looks by hand</h2>
+<p>To move an installed copy from one look to the other without adding the theme again, change the settings in <a href="#settings">Settings that differ</a>, the four <a href="#schemes">color schemes</a>, and rebuild the templates listed under <a href="#templates">Templates that differ</a> with the same sections. Nothing else changes.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html" aria-current="page">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theme settings | Barathea theme</title>
+<meta name="description" content="Every theme setting in Barathea, group by group, with its choices and defaults as the theme editor shows them.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Reference</p>
+  <h1>Theme settings</h1>
+  <p class="lede">Settings that apply across the whole store. Open them in the theme editor under <strong>Theme settings</strong>. Defaults below are the theme's own; each preset sets its own look values on top (see <a href="presets.html#settings">Presets</a>).</p>
+</header>
+<!-- ref:settings -->
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#settings-logo">Logo</a></li>
+    <li><a href="#settings-colors">Colors</a></li>
+    <li><a href="#settings-typography">Typography</a></li>
+    <li><a href="#settings-layout">Layout</a></li>
+    <li><a href="#settings-buttons">Buttons</a></li>
+    <li><a href="#settings-prices">Prices</a></li>
+    <li><a href="#settings-lines">Lines</a></li>
+    <li><a href="#settings-search-and-sharing">Search and sharing</a></li>
+    <li><a href="#settings-client-care">Client care</a></li>
+    <li><a href="#settings-search">Search</a></li>
+    <li><a href="#settings-social-media">Social media</a></li>
+    <li><a href="#settings-footer-note">Footer note</a></li>
+    <li><a href="#settings-product-page">Product page</a></li>
+    <li><a href="#settings-product-cards">Product cards</a></li>
+    <li><a href="#settings-bag">Bag</a></li>
+    <li><a href="#settings-shipping-and-returns">Shipping and returns</a></li>
+  </ul>
+</nav>
+<section class="ref" id="settings-logo" aria-labelledby="settings-logo-title">
+  <h2 id="settings-logo-title">Logo</h2>
+  <p>Without a logo, the header prints the store name in the text font.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Logo settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Logo</th><td>Image</td><td class="ref__note">An SVG or a PNG with a transparent background works best.</td></tr>
+      <tr><th scope="row">Logo on dark grounds</th><td>Image</td><td class="ref__note">Used over pictures and on dark color schemes. Leave empty to use the logo.</td></tr>
+      <tr><th scope="row">Logo width on desktop</th><td>Slider, 40 to 320 px, in steps of 4<span class="ref__default">Default: 120 px</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Logo width on phones</th><td>Slider, 40 to 200 px, in steps of 4<span class="ref__default">Default: 88 px</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Favicon</th><td>Image</td><td class="ref__note">Shown in browser tabs. A square image, at least 64 x 64 px.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-colors" aria-labelledby="settings-colors-title">
+  <h2 id="settings-colors-title">Colors</h2>
+  <p>Each preset sets four schemes; their values are on <a href="presets.html#schemes">Presets</a>. If you change colors, keep text at 4.5:1 against its ground.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Colors settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Scheme 1 is the page ground, scheme 2 a quiet ground, scheme 3 the night ground (pictures stay light on it) and scheme 4 a season ground. Sections pick a scheme in their own settings; text over pictures uses the scheme chosen below.</td></tr>
+      <tr><th scope="row">Color schemes</th><td>Color schemes<span class="ref__default">Set by the preset</span></td><td class="ref__note">Each scheme sets: Background, Background gradient, Text, Quiet text, Hairline, Field and control lines, Image ground, Buy button, Buy button label, Service links.</td></tr>
+      <tr><th scope="row">Text over pictures</th><td>Color scheme<span class="ref__default">Default: Scheme 3</span></td><td class="ref__note">The scheme for credits and headings printed over a picture (Hero, Image banner, Shop the look full screen). Pick a dark scheme when the pictures are light at the bottom. The shade below takes its background color.</td></tr>
+      <tr><th scope="row">Shade behind text over images</th><td>Slider, 0 to 80%, in steps of 5<span class="ref__default">Default: 40%</span></td><td class="ref__note">How dark the soft shade gets where text sits over a picture. 0% turns it off.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-typography" aria-labelledby="settings-typography-title">
+  <h2 id="settings-typography-title">Typography</h2>
+  <p>Each page loads at most four font files: the interface font in two weights and the text font in regular and italic.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Typography settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Two fonts carry the whole store: one for the interface and one for text. Choose fonts from the Shopify font library.</td></tr>
+      <tr><th scope="row">Interface font</th><td>Font<span class="ref__default">Default: Instrument Sans</span></td><td class="ref__note">Labels, menu, buttons, prices and badges. A medium weight reads best at small sizes.</td></tr>
+      <tr><th scope="row">Text font</th><td>Font<span class="ref__default">Default: Newsreader</span></td><td class="ref__note">Product names, headings, body text, credits and service links.</td></tr>
+      <tr><th scope="row">Heading size</th><td>Small / Medium / Large<span class="ref__default">Default: Medium</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Capital letters for labels and buttons</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Never applied in right-to-left languages.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-layout" aria-labelledby="settings-layout-title">
+  <h2 id="settings-layout-title">Layout</h2>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Layout settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Page width</th><td>Slider, 1200 to 2000 px, in steps of 40<span class="ref__default">Default: 1680 px</span></td><td class="ref__note">Text and grids stop at this width. Full-width images still reach the edges.</td></tr>
+      <tr><th scope="row">Side margin on large screens</th><td>Slider, 24 to 64 px, in steps of 4<span class="ref__default">Default: 40 px</span></td><td class="ref__note">Phones and tablets use smaller margins.</td></tr>
+      <tr><th scope="row">Space between sections</th><td>Slider, 50 to 150%, in steps of 10<span class="ref__default">Default: 100%</span></td><td class="ref__note">Scales the small, medium and large spacing that every section offers.</td></tr>
+      <tr><th scope="row">Corner radius</th><td>Slider, 0 to 8 px<span class="ref__default">Default: 0 px</span></td><td class="ref__note">Buttons, fields and panels. 0 px gives square corners.</td></tr>
+      <tr><th scope="row">Animations</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Panels, underlines and image changes. Shoppers who ask their device for reduced motion never see them.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-buttons" aria-labelledby="settings-buttons-title">
+  <h2 id="settings-buttons-title">Buttons</h2>
+  <p>For how the buy buttons wait for a size, see <a href="signature-features.html#size-before-buy">Size before buy</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Buttons settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Filled buttons are kept for buying: add to bag, checkout and quick add. Every other action uses the secondary style.</td></tr>
+      <tr><th scope="row">Button and field height</th><td>Slider, 44 to 56 px, in steps of 2<span class="ref__default">Default: 48 px</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Secondary actions</th><td>Outline button / Text link<span class="ref__default">Default: Outline button</span></td><td class="ref__note">Used for filters, sign-up, forms and every action that is not a purchase.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-prices" aria-labelledby="settings-prices-title">
+  <h2 id="settings-prices-title">Prices</h2>
+  <p>Compare-at prices also decide the Sale badge on cards; see <a href="signature-features.html#the-card">The card</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Prices settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Show currency codes</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Adds the code after prices, for example 120 USD. Useful when you sell in more than one currency.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Compare-at prices</th></tr>
+      <tr><th scope="row">Show compare-at prices</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shown struck through next to the price, only when the compare-at price is higher.</td></tr>
+      <tr><th scope="row">Show compare-at prices only in these countries</th><td>Text</td><td class="ref__note">Two-letter country codes separated by commas, for example US, CA. Leave empty for every country.</td></tr>
+      <tr><th scope="row">Show compare-at prices only in your store currency</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Hides them when a shopper pays in another currency.</td></tr>
+      <tr><th scope="row">Hide compare-at prices for products with this tag</th><td>Text</td><td class="ref__note">For example no-compare. Matching ignores capital letters.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-lines" aria-labelledby="settings-lines-title">
+  <h2 id="settings-lines-title">Lines</h2>
+  <p>See <a href="collections-and-lines.html#lines">Lines and the Lines menu</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Lines settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">A line is a named group of products, like a collection or a designer. It shows above product names on cards and on product pages.</td></tr>
+      <tr><th scope="row">Lines menu</th><td>Menu</td><td class="ref__note">A menu that links to your line collections. A product's line is the first collection in this menu that holds it.</td></tr>
+      <tr><th scope="row">When a product is in no line</th><td>Vendor / Product type / Nothing<span class="ref__default">Default: Nothing</span></td><td class="ref__note">What to show instead.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-search-and-sharing" aria-labelledby="settings-search-and-sharing-title">
+  <h2 id="settings-search-and-sharing-title">Search and sharing</h2>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Search and sharing settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Titles and descriptions come from each product, collection and page, and from your online store preferences. These settings add a fallback picture for shared links and structured data for search engines.</td></tr>
+      <tr><th scope="row">Share image</th><td>Image</td><td class="ref__note">Shown when a page without its own picture is shared on social media or in messages. 1200 x 628 px works best.</td></tr>
+      <tr><th scope="row">Structured data for search engines</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Describes your store, products, articles and breadcrumbs to search engines. Turn it off if an SEO app adds its own.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-client-care" aria-labelledby="settings-client-care-title">
+  <h2 id="settings-client-care-title">Client care</h2>
+  <p>See <a href="signature-features.html#client-care">Client care with context</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Client care settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">One panel reached from the header, the phone menu, the product page, a sold-out size, the bag and the footer. Every item hides itself while its setting is empty; with nothing filled in, the Client care link hides too.</td></tr>
+      <tr><th scope="row">Phone number</th><td>Text</td><td class="ref__note">Shown as a call link, for example +1 555 0100.</td></tr>
+      <tr><th scope="row">Opening hours</th><td>Text</td><td class="ref__note">Shown under the phone number, for example Monday to Saturday, 10 am to 7 pm.</td></tr>
+      <tr><th scope="row">Message link</th><td>Text</td><td class="ref__note">A messaging link, for example https://wa.me/15550100?text={context}. {context} becomes the product, color, size and style code the shopper asks about; {ref} becomes the place the chat started from (header, product, size, bag, footer).</td></tr>
+      <tr><th scope="row">Email address</th><td>Text</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Booking link</th><td>Link</td><td class="ref__note">A plain link where Arrange a visit goes, for example a page of your booking app. Leave empty to use the contact form with the visit topic.</td></tr>
+      <tr><th scope="row">Contact page</th><td>Page</td><td class="ref__note">Write to us opens this page with the topic and the product details filled in. Use the page.contact template.</td></tr>
+      <tr><th scope="row">Boutiques page</th><td>Page</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Size guide page</th><td>Page</td><td class="ref__note"></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-search" aria-labelledby="settings-search-title">
+  <h2 id="settings-search-title">Search</h2>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Search settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Show suggestions while typing</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Products, collections, stories and help pages appear as the shopper types.</td></tr>
+      <tr><th scope="row">Also match style codes and tags</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Search and suggestions also look at variant SKUs and product tags, so a code copied from a post finds its product.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Before typing</th></tr>
+      <tr><th scope="row">Popular searches</th><td>Menu</td><td class="ref__note">A menu of up to 6 links, shown as text when the search opens.</td></tr>
+      <tr><th scope="row">Collections</th><td>Collections</td><td class="ref__note">Up to 3 collections shown when the search opens.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-social-media" aria-labelledby="settings-social-media-title">
+  <h2 id="settings-social-media-title">Social media</h2>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Social media settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Links to your accounts, shown as small icons in the footer. Empty links are left out.</td></tr>
+      <tr><th scope="row">Instagram</th><td>Link</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Facebook</th><td>Link</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">X</th><td>Link</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">TikTok</th><td>Link</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Pinterest</th><td>Link</td><td class="ref__note"></td></tr>
+      <tr><th scope="row">YouTube</th><td>Link</td><td class="ref__note"></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-footer-note" aria-labelledby="settings-footer-note-title">
+  <h2 id="settings-footer-note-title">Footer note</h2>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Footer note settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Note</th><td>Text</td><td class="ref__note">The smallest and last line of the footer, for example Images generated with AI. Leave empty to hide it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-product-page" aria-labelledby="settings-product-page-title">
+  <h2 id="settings-product-page-title">Product page</h2>
+  <p>See <a href="product-setup.html#sizes">Sizes and the size system</a> and <a href="product-setup.html#size-guide">Size guide</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Product page settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">Sizes, buying and the size guide on every product page. Gallery shape and layout are set per template in the Product information section.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Sizes</th></tr>
+      <tr><th scope="row">Size option names</th><td>Text<span class="ref__default">Default: Size, Taille, Talla, Taglia, Groesse, Gr&#246;&#223;e, Ring size, EU size, US size, UK size, FR size, IT size</span></td><td class="ref__note">Shoppers choose a size before Add to bag and express checkout only on options with one of these names, in any case. Separate names with commas. Other options, such as Color, Material or Amount, start on the first available choice. Gift cards never ask for a size.</td></tr>
+      <tr><th scope="row">Size system label</th><td>Text</td><td class="ref__note">Shown beside the size label, for example FR, IT, EU or US. Leave it empty when your sizes name their own system.</td></tr>
+      <tr><th scope="row">Select a size for the shopper</th><td>When only one size is in stock / Never<span class="ref__default">Default: When only one size is in stock</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Show Low stock on sizes</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Only for sizes whose inventory Shopify tracks. Off by default: no countdowns, no pressure.</td></tr>
+      <tr><th scope="row">Low stock at or below</th><td>Slider, 1 to 10<span class="ref__default">Default: 2</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Buying</th></tr>
+      <tr><th scope="row">Wait for a size before express checkout</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Accelerated checkout buttons stay inactive, with a short note, until the shopper chooses a size, so nobody buys a size they did not pick. The buttons keep their own colors.</td></tr>
+      <tr><th scope="row">Show the buy bar on phones</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Appears when Add to bag scrolls out of view. It never adds a size nobody chose.</td></tr>
+      <tr><th scope="row">Style code label</th><td>Text</td><td class="ref__note">Shown before the SKU in the Details panel, for example Style FC-0112. Leave empty for the theme's word, Style, in the shopper's language.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Size guide</th></tr>
+      <tr class="ref-para"><td colspan="3">How a product finds its size guide: the page picked on its Size guide block first, then the rules below, then the default page.</td></tr>
+      <tr><th scope="row">Default size guide page</th><td>Page</td><td class="ref__note">Without it, the Client care size guide page is used.</td></tr>
+      <tr><th scope="row">Product type rules</th><td>Text</td><td class="ref__note">One rule per line: a product type, a colon, then a page handle with an optional tab. Example: Coats: size-guide#women. Use * for every type.</td></tr>
+      <tr><th scope="row">Conversion table when there is no page</th><td>None / Women's clothing / Men's tailoring / Shoes / Rings<span class="ref__default">Default: None</span></td><td class="ref__note">Shown in the size guide drawer only when no page is found.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-product-cards" aria-labelledby="settings-product-cards-title">
+  <h2 id="settings-product-cards-title">Product cards</h2>
+  <p>See <a href="signature-features.html#the-card">The card</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Product cards settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">One card is used everywhere products are listed: grids, rails, Shop the look and search.</td></tr>
+      <tr><th scope="row">Image shape</th><td>Portrait 4:5 / Tall 3:4 / Square<span class="ref__default">Default: Portrait 4:5</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Image ground</th><td>Edge to edge / Color ground / Blend white backgrounds<span class="ref__default">Default: Edge to edge</span></td><td class="ref__note">Edge to edge fills the card with the picture. Color ground shows the whole picture on the color scheme's image ground. Blend also lets white photo backgrounds melt into that ground.</td></tr>
+      <tr><th scope="row">Show second image on hover</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Loads only when a shopper points at the card, on devices with a mouse.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Text</th></tr>
+      <tr><th scope="row">Top line</th><td>Line / Vendor / Product type / None<span class="ref__default">Default: Line</span></td><td class="ref__note">The line is the first of the product's collections found in the Lines menu (Theme settings, Lines). Vendor links to all products of that vendor.</td></tr>
+      <tr><th scope="row">Product name style</th><td>Text font, sentence case / Interface font, labels style<span class="ref__default">Default: Text font, sentence case</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Material line</th><td>Subtitle / Product type / Vendor / None<span class="ref__default">Default: Subtitle</span></td><td class="ref__note">Subtitle uses the product's standard Subtitle metafield (descriptors.subtitle).</td></tr>
+      <tr><th scope="row">Show rating</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Uses the standard product rating metafields filled by review apps.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Badges</th></tr>
+      <tr><th scope="row">Show badges</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Sold out and Sale are automatic. Add a product tag such as badge:New, badge:Limited edition or badge:Made to order for others. Up to two show per card.</td></tr>
+      <tr><th scope="row">Sale badge</th><td>Word / Percentage off / None<span class="ref__default">Default: Word</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Shopping</th></tr>
+      <tr><th scope="row">Show quick add</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">One button opens the sizes of the color shown, or adds the product as shown when it has only a color to choose. Products with more than 8 sizes, more than 2 options or an option that is neither a size nor a color (such as Material or a gift card amount) open a quick view sheet instead.</td></tr>
+      <tr><th scope="row">Colors</th><td>Swatches / Number of colors / None<span class="ref__default">Default: Swatches</span></td><td class="ref__note">Swatches use the native color and image swatches of your product options.</td></tr>
+      <tr><th scope="row">Swatches shown before +N</th><td>Slider, 3 to 8<span class="ref__default">Default: 5</span></td><td class="ref__note"></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-bag" aria-labelledby="settings-bag-title">
+  <h2 id="settings-bag-title">Bag</h2>
+  <p>The three promises are promises to your customers; see <a href="signature-features.html#promises">Promises per market</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Bag settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">After adding to the bag</th><td>Open the bag drawer / Go to the bag page / Show a short confirmation<span class="ref__default">Default: Open the bag drawer</span></td><td class="ref__note">The drawer opens the bag from the side. The confirmation is a short sheet with View bag and Checkout. The page goes to the bag page.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Gift options</th></tr>
+      <tr><th scope="row">Show gift options</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Gift wrapping, a gift message and leaving prices out of the parcel. Saved on the order as cart attributes.</td></tr>
+      <tr><th scope="row">Gift wrapping ticked by default</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Longest gift message (characters)</th><td>Slider, 100 to 400, in steps of 20<span class="ref__default">Default: 200</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Delivery notes</th></tr>
+      <tr><th scope="row">Show delivery notes on the bag page</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Delivery notes label</th><td>Text</td><td class="ref__note">Leave empty for &quot;Delivery notes&quot;.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Promises</th></tr>
+      <tr class="ref-para"><td colspan="3">These are promises to your customers: change or remove any your store does not keep. Three short promises shown as one line in the bag and under Add to bag. An empty field uses the theme's wording, in the shopper's language: First alteration free; Delivery in 2-4 working days; Returns within 30 days. Type a single dash (-) to leave one out.</td></tr>
+      <tr><th scope="row">Show the promises</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">First promise</th><td>Text</td><td class="ref__note">Empty: First alteration free</td></tr>
+      <tr><th scope="row">Second promise</th><td>Text</td><td class="ref__note">Empty: Delivery in 2-4 working days</td></tr>
+      <tr><th scope="row">Third promise</th><td>Text</td><td class="ref__note">Empty: Returns within 30 days</td></tr>
+      <tr><th scope="row">Show the Client care phone line</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shows &quot;Questions? Call&quot; with the Client care phone and hours. Hidden when no phone is set.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Empty bag</th></tr>
+      <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note">Leave empty for New in, in the shopper's language.</td></tr>
+      <tr><th scope="row">Link</th><td>Link<span class="ref__default">Default: /collections/all</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Show a Client care link</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Hidden when Client care is not set up.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Bag page</th></tr>
+      <tr><th scope="row">Show payment icons</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Gift card page</th></tr>
+      <tr><th scope="row">Gift card picture</th><td>Image</td><td class="ref__note">Shown on the gift card page. Use a picture without text; 3:2 works best. Without one, a plain card in the button color is shown.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="ref" id="settings-shipping-and-returns" aria-labelledby="settings-shipping-and-returns-title">
+  <h2 id="settings-shipping-and-returns-title">Shipping and returns</h2>
+  <p>See <a href="signature-features.html#promises">Promises per market</a> and <a href="signature-features.html#final-sale">Final sale</a>.</p>
+  <div class="table-wrap">
+    <table class="ref-table">
+      <caption>Shipping and returns settings</caption>
+      <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
+      <tbody>
+      <tr class="ref-para"><td colspan="3">One place for delivery times, returns windows, duties and final sale. The bag, the product page and the Shipping and returns section read these settings, so they always agree. Never type prices or currencies here.</td></tr>
+      <tr class="ref-para"><td colspan="3">Up to three groups of countries, each with its own delivery time, returns window and duties. Shoppers in other countries see the &quot;Every other country&quot; row. A part left empty is not shown.</td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Country group 1</th></tr>
+      <tr><th scope="row">Countries</th><td>Text</td><td class="ref__note">Two-letter country codes separated by commas, for example AE, SA, KW.</td></tr>
+      <tr><th scope="row">Delivery time</th><td>Text</td><td class="ref__note">For example &quot;1-2 working days&quot;. Shown as &quot;Delivery to [country] in 1-2 working days&quot;.</td></tr>
+      <tr><th scope="row">Returns window</th><td>Text</td><td class="ref__note">For example &quot;14 days&quot;. Shown as &quot;Returns within 14 days&quot;.</td></tr>
+      <tr><th scope="row">Duties and import taxes</th><td>Do not mention / We pay them / Included in the price / May be due on delivery<span class="ref__default">Default: Do not mention</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Country group 2</th></tr>
+      <tr><th scope="row">Countries</th><td>Text</td><td class="ref__note">Two-letter country codes separated by commas, for example AE, SA, KW.</td></tr>
+      <tr><th scope="row">Delivery time</th><td>Text</td><td class="ref__note">For example &quot;1-2 working days&quot;. Shown as &quot;Delivery to [country] in 1-2 working days&quot;.</td></tr>
+      <tr><th scope="row">Returns window</th><td>Text</td><td class="ref__note">For example &quot;14 days&quot;. Shown as &quot;Returns within 14 days&quot;.</td></tr>
+      <tr><th scope="row">Duties and import taxes</th><td>Do not mention / We pay them / Included in the price / May be due on delivery<span class="ref__default">Default: Do not mention</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Country group 3</th></tr>
+      <tr><th scope="row">Countries</th><td>Text</td><td class="ref__note">Two-letter country codes separated by commas, for example AE, SA, KW.</td></tr>
+      <tr><th scope="row">Delivery time</th><td>Text</td><td class="ref__note">For example &quot;1-2 working days&quot;. Shown as &quot;Delivery to [country] in 1-2 working days&quot;.</td></tr>
+      <tr><th scope="row">Returns window</th><td>Text</td><td class="ref__note">For example &quot;14 days&quot;. Shown as &quot;Returns within 14 days&quot;.</td></tr>
+      <tr><th scope="row">Duties and import taxes</th><td>Do not mention / We pay them / Included in the price / May be due on delivery<span class="ref__default">Default: Do not mention</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Every other country</th></tr>
+      <tr><th scope="row">Delivery time</th><td>Text</td><td class="ref__note">For example &quot;1-2 working days&quot;. Shown as &quot;Delivery to [country] in 1-2 working days&quot;.</td></tr>
+      <tr><th scope="row">Returns window</th><td>Text</td><td class="ref__note">For example &quot;14 days&quot;. Shown as &quot;Returns within 14 days&quot;.</td></tr>
+      <tr><th scope="row">Duties and import taxes</th><td>Do not mention / We pay them / Included in the price / May be due on delivery<span class="ref__default">Default: Do not mention</span></td><td class="ref__note"></td></tr>
+      <tr class="ref-sub"><th colspan="3" scope="colgroup">Final sale</th></tr>
+      <tr class="ref-para"><td colspan="3">Final sale products show one line above Add to bag and in the bag: &quot;Final sale. This item can't be returned.&quot;, with a link to your refund policy.</td></tr>
+      <tr><th scope="row">Product tag</th><td>Text<span class="ref__default">Default: final-sale</span></td><td class="ref__note">Products with this tag are final sale. Letter case does not matter.</td></tr>
+      <tr><th scope="row">Final sale collections</th><td>Collections</td><td class="ref__note">Every product in these collections is final sale.</td></tr>
+      <tr><th scope="row">Personalized items are final sale</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Final sale line</th><td>Text</td><td class="ref__note">Leave empty for the standard line, which follows the shopper's language.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- /ref:settings -->
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html" aria-current="page">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product setup | Barathea theme</title>
+<meta name="description" content="How Barathea reads your products: options and sizes, the size system, swatches, pictures per color, metafields and the four product templates.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Set up your store</p>
+  <h1>Product setup</h1>
+  <p class="lede">The theme reads ordinary Shopify product data. Set it up as below and the cards, product pages, size guide and Client care all fill themselves in.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#options">Options</a></li>
+    <li><a href="#sizes">Sizes and the size system</a></li>
+    <li><a href="#size-guide">Size guide</a></li>
+    <li><a href="#swatches">Swatches</a></li>
+    <li><a href="#media">Pictures per color</a></li>
+    <li><a href="#metafields">Metafields</a></li>
+    <li><a href="#templates">Product templates</a></li>
+    <li><a href="#tags">Tags</a></li>
+    <li><a href="#more">Style codes, personalization, gift cards</a></li>
+  </ul>
+</nav>
+
+<h2 id="options">Options</h2>
+<p>Use one option for color and one for size, in either order, or a size option alone. The theme finds the color option as the first option with Shopify swatches or, failing that, the first whose name reads as a color (<code>Color</code>, <code>Colour</code>, <code>Couleur</code>, <code>Farbe</code>, <code>Colore</code>, <code>Kleur</code>). It finds a size option by its name: one of the <strong>Size option names</strong> (see <a href="#sizes">Sizes and the size system</a>). Other options work too, such as Material or a gift card's amount. They show as buttons and start on the first choice in stock, so Add to bag is ready at once.</p>
+<ul>
+  <li>An option with a single value is printed as a line above the sizes ("Color: Camel"), not as a choice. You can turn this off in the Colors and sizes block.</li>
+  <li>Combined listings work: each color can be its own product, and choosing a color moves to that product.</li>
+  <li>Quick add on cards handles one size option of up to 8 sizes, with or without a color, and adds a product with only a color as shown. Longer size runs, products with more than 2 options, products with an option that is neither a size nor a color (Material, a gift card's amount) and products with two options of which neither is a color open a quick view sheet.</li>
+</ul>
+
+<h2 id="sizes">Sizes and the size system</h2>
+<ul>
+  <li><strong>Size option names</strong> (<span class="path">Theme settings &gt; Product page</span>) lists the option names that count as a size, separated by commas, in any case. Only a size waits for the shopper's choice before Add to bag and express checkout (<a href="signature-features.html#size-before-buy">Size before buy</a>). The default covers <code>Size</code>, <code>Taille</code>, <code>Talla</code>, <code>Taglia</code>, <code>Groesse</code>, <code>Gr&ouml;&szlig;e</code>, <code>Ring size</code> and <code>EU size</code>, <code>US size</code>, <code>UK size</code>, <code>FR size</code>, <code>IT size</code>. If your size option has another name, such as <code>Shoe size</code> or <code>Waist</code>, add it to the list; write it as it is spelled on your products. Gift cards never wait for a size.</li>
+  <li><strong>Size system label</strong> (<span class="path">Theme settings &gt; Product page</span>) names your sizing, for example FR, IT, EU or US. The size label then reads "Size (FR)". Leave it empty when your sizes name their own system, such as "FR 38". The Colors and sizes block can override it per template, for example <code>mm</code> for rings.</li>
+  <li><strong>Sold out</strong> means no stock with tracking on and <strong>Continue selling when out of stock</strong> off. Sold-out sizes stay visible and lead to Ask about this size.</li>
+  <li><strong>Low stock</strong> is off by default. If you turn it on, it shows only for tracked inventory, at or below the number you set. There are no countdowns.</li>
+</ul>
+
+<h2 id="size-guide">Size guide</h2>
+<p>The Size guide link beside the size label opens your guide in a drawer. A product finds its guide in this order, and the first match wins:</p>
+<ol class="steps">
+  <li>The page picked in the product template's <strong>Size guide</strong> block. The setting accepts a page reference metafield, so each product can name its own guide.</li>
+  <li>The <strong>Product type rules</strong> in <span class="path">Theme settings &gt; Product page</span>: one rule per line, a product type, a colon, then a page handle with an optional tab. <code>*</code> matches every type; a rule for the product's own type wins over it wherever it sits in the list. Capital letters do not matter.</li>
+  <li>The <strong>Default size guide page</strong>, then the Client care size guide page.</li>
+</ol>
+<pre><code>Coats: size-guide#women
+Shoes: size-guide#shoes
+Jewelry: size-guide#rings
+*: size-guide#women</code></pre>
+<p>Build the guide on a page with the <strong>size-guide</strong> template: one Tab block per tab (Women, Men, Shoes, Rings), each followed by its How to measure and Table blocks. A tab named "Women" opens with <code>?tab=women</code>; the drawer opens the tab from the rule. Tables marked "Measurements in cm" get a cm and inch switch.</p>
+<p>Without any page, the drawer can show a built-in conversion table (Women's clothing, Men's tailoring, Shoes or Rings), chosen in the block or in <strong>Conversion table when there is no page</strong>.</p>
+
+<h2 id="swatches">Swatches</h2>
+<p>Swatches are Shopify's own. In the product, link the color option to a color metafield or give each value a color or an image swatch, and the cards and product page show them. Without swatch data, cards show a count ("3 colors") and the product page shows text buttons. Product cards show up to the number set in <strong>Swatches shown before +N</strong>; choosing one swaps the card's picture.</p>
+<p>The same swatches work as color filters, once Color is added in Search and Discovery.</p>
+
+<h2 id="media">Pictures per color</h2>
+<p>With <strong>Show only the chosen color's pictures</strong> on (in the Product information section, on by default), the gallery shows the pictures of the chosen color only. Order the product's media like this:</p>
+<ol class="steps">
+  <li>Pictures for every color first, for example a fabric close-up. They show with every color.</li>
+  <li>Then each color's pictures together, starting with the picture set as that color's variant picture.</li>
+</ol>
+<p>A color's pictures run from its variant picture to the next variant picture. Give each color at least two pictures. Use the same shape across the store, at least 1600 px on the long side: portrait 4:5 for the Barathea look, square on pure white for the Plaster look.</p>
+
+<h2 id="metafields">Metafields</h2>
+<p>Two are Shopify's standard definitions: turn them on in <span class="path">Settings &gt; Custom data &gt; Products</span>. The two <code>custom</code> ones are yours to create, with exactly these namespace, key and type.</p>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Product metafields the theme reads</caption>
+  <thead><tr><th scope="col">Metafield</th><th scope="col">Type</th><th scope="col">Where it shows</th></tr></thead>
+  <tbody>
+    <tr><th scope="row"><code>descriptors.subtitle</code><br>Product subtitle (standard)</th><td data-label="Type">Single line text</td><td data-label="Where it shows">The material line under the name on product pages and cards, and in Product spotlight. Example: "Double-faced wool, horn buttons".</td></tr>
+    <tr><th scope="row"><code>descriptors.care_guide</code><br>Care guide (standard)</th><td data-label="Type">Multi-line text</td><td data-label="Where it shows">The Care panel on product pages. The panel hides when it is empty.</td></tr>
+    <tr><th scope="row"><code>custom.fit_line</code><br>Fit line (create it)</th><td data-label="Type">Single line text</td><td data-label="Where it shows">The Fit line block. Connect it once per product template: select the block, then use the dynamic source button beside Text. Example: "Cut close to the body. The model is 178 cm and wears FR 36."</td></tr>
+    <tr><th scope="row"><code>custom.dimensions</code><br>Dimensions (create it)</th><td data-label="Type">Multi-line text</td><td data-label="Where it shows">The Specifications block on the bag template reads it by itself: one row per line, a label, a colon and a value, for example "Width: 30 cm". Nothing to connect.</td></tr>
+    <tr><th scope="row"><code>reviews.rating</code>, <code>reviews.rating_count</code></th><td data-label="Type">Filled by review apps</td><td data-label="Where it shows">The Star rating block and, if you turn it on, the rating on cards.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Any text setting with a dynamic source button can read another metafield of yours; the Specifications block can name any metafield as <code>namespace.key</code>.</p>
+
+<h2 id="templates">Product templates</h2>
+<p>Pick a template for each product under <strong>Theme template</strong> in the product's admin page.</p>
+<dl class="rows">
+  <div><dt><code>product</code> (default)</dt><dd>Clothing and shoes. Portrait gallery, sizes with the Size guide link beside the label, Fit line, Promises and help, and three panels: Details, Care, Shipping and returns.</dd></div>
+  <div><dt><code>product.bag</code></dt><dd>Bags and small leather goods. No size guide; Personalization (initials, up to 3 characters); a Dimensions table from <code>custom.dimensions</code>, open by default.</dd></div>
+  <div><dt><code>product.jewelry</code></dt><dd>Rings and cuffs. Square gallery, sizes labeled <code>mm</code>, a Size guide link (with no guide page found, it shows the built-in ring table), and Personalization (up to 12 characters).</dd></div>
+  <div><dt><code>product.jewelry-plain</code></dt><dd>Earrings and chains. The jewelry page without Personalization and without the Size guide link.</dd></div>
+</dl>
+<p>Each template keeps its own block order and settings. To make another, open the editor's template menu and choose <strong>Create template</strong>, based on the closest one.</p>
+
+<h2 id="tags">Tags</h2>
+<dl class="rows">
+  <div><dt><code>badge:</code> tags</dt><dd><code>badge:New</code>, <code>badge:Limited edition</code>, <code>badge:Made to order</code>: the text after the colon shows on the card as written. Sold out and Sale are automatic; up to two badges show.</dd></div>
+  <div><dt><code>final-sale</code></dt><dd>Marks the product as final sale (the tag is set in <span class="path">Theme settings &gt; Shipping and returns</span>). See <a href="signature-features.html#final-sale">Final sale</a>.</dd></div>
+  <div><dt>Hide compare-at</dt><dd>A tag you name in <span class="path">Theme settings &gt; Prices</span>, for example <code>no-compare</code>, hides the compare-at price of that product.</dd></div>
+</dl>
+
+<h2 id="more">Style codes, personalization, gift cards</h2>
+<ul>
+  <li><strong>Style code.</strong> The SKU of the chosen variant, shown in the Details panel as "Style FC-0112" and sent with Client care messages. <strong>Style code label</strong> in <span class="path">Theme settings &gt; Product page</span> changes the word.</li>
+  <li><strong>Personalization.</strong> The block saves the shopper's text and style as line item properties on the order. Write how long it takes and whether it can be returned in its Policy text. To make personalized items final sale, turn on <strong>Personalized items are final sale</strong>.</li>
+  <li><strong>Complementary products</strong> for Complete the look are set per product in Shopify's Search and Discovery app.</li>
+  <li><strong>Gift cards.</strong> A gift card's amounts (Shopify's Denominations option) start on the first amount, and Add to bag is ready at once: a gift card never waits for a size. On cards, quick add opens quick view to choose the amount. A gift card product shows the recipient form (name, email, message and send date) when the Buy buttons block's <strong>Show the gift card recipient form</strong> is on. The gift card page shows the picture set in <span class="path">Theme settings &gt; Bag &gt; Gift card picture</span>.</li>
+  <li><strong>Descriptions.</strong> The Story block shows the first lines of the description with Read more. Start with a sentence or two about the product, then the details.</li>
+</ul>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html" aria-current="page">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

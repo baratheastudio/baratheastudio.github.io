@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signature features | Barathea theme</title>
+<meta name="description" content="What sets Barathea apart and how to set each part up: Shop the look, the index, Client care with context, pacing, the card, size before buy, Arrange a visit, promises per market and final sale.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Start</p>
+  <h1>Signature features</h1>
+  <p class="lede">Nine systems give Barathea its character. Each is built from ordinary sections and settings, so you can use as much or as little of it as your store needs.</p>
+</header>
+
+<nav class="toc" aria-label="On this page">
+  <p class="toc__title">On this page</p>
+  <ul class="toc__list toc__list--inline">
+    <li><a href="#story-and-shop">Story and shop</a></li>
+    <li><a href="#the-index">The index</a></li>
+    <li><a href="#client-care">Client care with context</a></li>
+    <li><a href="#pacing">Pacing and the night band</a></li>
+    <li><a href="#the-card">The card</a></li>
+    <li><a href="#size-before-buy">Size before buy</a></li>
+    <li><a href="#arrange-a-visit">Arrange a visit</a></li>
+    <li><a href="#promises">Promises per market</a></li>
+    <li><a href="#final-sale">Final sale</a></li>
+  </ul>
+</nav>
+
+<h2 id="story-and-shop">Story and shop</h2>
+<p>A campaign picture and the products in it, shown together. When a shopper points at a product, or reaches it with the keyboard, a fine ring appears where that product sits in the picture. The credit counts what is shown: "3 in this picture".</p>
+<h3>Where it appears</h3>
+<ul>
+  <li>The <a href="sections.html#section-story-shop">Shop the look</a> section, in three layouts: <strong>Spread</strong> (the picture at full height beside its products), <strong>Full screen</strong> (the picture fills the screen, products beneath) and <strong>Compact</strong> (for line pages and stories). First on the home page, its heading is the page heading.</li>
+  <li>The <strong>Shop the look tile</strong> block of the product grid, placed among the cards.</li>
+  <li>The <strong>Shop the look</strong> block inside a journal story.</li>
+</ul>
+<h3>Set it up</h3>
+<ol class="steps">
+  <li>Add the section and pick a portrait picture with the products in it. Set its focal point in <span class="path">Content &gt; Files</span> so the crop keeps the products.</li>
+  <li>Add one Product block for each product the picture shows, no more and no fewer: the count comes from the blocks.</li>
+  <li>In each Product block, set <strong>From the left</strong> and <strong>From the top</strong> (in percent) to the product's place in the picture. The ring appears there.</li>
+  <li>Optional: <strong>Show dots on the picture</strong> adds visible dots that lead to their product when tapped. Off keeps the picture clear.</li>
+</ol>
+<div class="callout">
+  <p class="label">Good to know</p>
+  <p>A phone picture is a different picture, so the rings and dots are hidden on phones when you set one. With <strong>Products: This collection</strong> on a line template shared by several lines, the section uses each collection's own picture and products; it then prints no rings and the count reads "From this line". For rings on a line page, give that line <a href="collections-and-lines.html#per-line-templates">its own template</a>.</p>
+</div>
+
+<h2 id="the-index">The index</h2>
+<p>Names come first. Menus, lines and designers are set as a text index, and one picture beside them follows the name under the pointer or keyboard focus. The picture never holds a link and loads only when a shopper first shows interest, so the index stays light.</p>
+<h3>Where it appears</h3>
+<ul>
+  <li><strong>The header's menu panels.</strong> Each top-level menu item opens a panel with its links, the lines from your Lines menu (Show lines in menu panels) and one portrait picture. A <strong>Menu panel</strong> block in the header gives each item its first picture; otherwise the item's own collection picture is used.</li>
+  <li>The <a href="sections.html#section-collection-index">Collection index</a> section, on the home page or anywhere. On phones each name can carry a small picture instead (shown only when every name has one).</li>
+  <li>The <a href="sections.html#section-line-intro">Line intro</a> at the top of a line page: the line's product types (or a menu) with counts.</li>
+  <li>The Collections page as <strong>Index A-Z</strong>: names in alphabetical groups, with letter jumps and a preview picture on wide screens.</li>
+</ul>
+<h3>Set it up</h3>
+<p>Give every collection a picture (portrait 4:5 works best) and a short description; the index uses both. Build your main menu in <span class="path">Online Store &gt; Navigation</span>, up to three levels. See <a href="collections-and-lines.html">Collections and lines</a>.</p>
+
+<h2 id="client-care">Client care with context</h2>
+<p>One panel holds every way to reach your team: call (with your hours), a message link, email, write to us, Arrange a visit, boutiques and the size guide. It opens from the header, the phone menu, the product page (<strong>Ask an adviser</strong>), a sold-out size (<strong>Ask about this size</strong>), quick add, the bag, the footer, a search with no results and the size guide. When opened from a product, it starts with a line about what the shopper is looking at:</p>
+<pre><code>About: Long coat, Black, FR 38, Style FC-0112</code></pre>
+<h3>Set it up</h3>
+<ol class="steps">
+  <li>Fill in <span class="path">Theme settings &gt; Client care</span>: phone number, opening hours, message link, email address, booking link, and the Contact, Boutiques and Size guide pages. Every item hides while its setting is empty; with nothing filled in, the Client care link hides too.</li>
+  <li>In the header group, the <strong>Client care panel</strong> section sets the order of the items with its blocks. Its setting <strong>Show what the shopper asks about</strong> turns the About line on or off.</li>
+  <li>Make a Contact page with the <strong>contact</strong> template. Its Contact form has one Topic block per topic; the <strong>Topic code</strong> lets a link choose it (Client care uses <code>visit</code>, <code>repair</code>, <code>advice</code>, <code>personalization</code> and <code>order</code>).</li>
+</ol>
+<h3>What the context does</h3>
+<ul>
+  <li><strong>Message link.</strong> In the link, <code>{context}</code> becomes the About line and <code>{ref}</code> the place the chat started (header, product, size, bag, footer). For example <code>https://wa.me/15550100?text={context}</code>.</li>
+  <li><strong>Write to us</strong> opens your contact page with the topic chosen and the About line filled in. The form sends it to you as a field named About, so you know which product, color and size the message is about.</li>
+  <li>The style code is the SKU of the chosen variant.</li>
+</ul>
+
+<h2 id="pacing">Pacing and the night band</h2>
+<p>Barathea separates sections with space, a change of ground or a change of picture, never with divider lines. A page reads as a rhythm: white sections, then an ink one, then white again.</p>
+<ul>
+  <li><strong>Color schemes</strong> carry the rhythm. Scheme 1 is the page ground, scheme 2 a quiet ground, scheme 3 the night ground and scheme 4 the season ground; every section picks one. Pictures stay light on the night ground.</li>
+  <li><strong>The night band</strong> is the <a href="sections.html#section-band">Image banner</a> added from <strong>Night banner with products</strong>: a wide picture in the night scheme with its credit and a row of products beneath. Use one per page.</li>
+  <li><strong>Scale</strong> sets pace too: <a href="sections.html#section-large-text">Large text</a> for one sentence, <a href="sections.html#section-spotlight">Product spotlight</a> for one product alone on a plain field.</li>
+  <li><strong>Space between sections</strong> (<span class="path">Theme settings &gt; Layout</span>) scales every section's Small, Medium and Large spacing at once.</li>
+  <li><strong>Text over pictures</strong> uses the scheme chosen in <span class="path">Theme settings &gt; Colors</span>, on a soft shade whose strength you set there.</li>
+</ul>
+
+<h2 id="the-card">The card</h2>
+<p>One product card is used everywhere products are listed: grids, rows, Shop the look, search and the product page's rows. Set it once in <span class="path">Theme settings &gt; Product cards</span>.</p>
+<ul>
+  <li><strong>Picture:</strong> portrait 4:5, tall 3:4 or square; edge to edge, or whole on the scheme's image ground, or blended so white photo backgrounds melt into that ground. A second picture on hover loads only when a shopper points at the card, on devices with a mouse.</li>
+  <li><strong>Top line:</strong> the product's line, vendor or type, above the name.</li>
+  <li><strong>Material line:</strong> from the product's Subtitle metafield (<code>descriptors.subtitle</code>), or the type or vendor.</li>
+  <li><strong>Badges:</strong> Sold out and Sale are automatic; Sale shows only when a compare-at price is higher and allowed in the shopper's market. Add others with product tags that start with <code>badge:</code>, for example <code>badge:New</code> or <code>badge:Made to order</code>. Up to two show.</li>
+  <li><strong>Colors:</strong> Shopify's own color and image swatches, or a count of colors. Choosing a color changes the card's picture and its quick add sizes.</li>
+  <li><strong>Quick add:</strong> one button opens the sizes of the color shown, and nothing is added before a size is chosen. Products with more than 8 sizes or more than 2 options open a quick view sheet instead.</li>
+</ul>
+<p>Each card has one link, the product name, stretched over the whole card, so keyboard users meet one stop per product.</p>
+
+<h2 id="size-before-buy">Size before buy</h2>
+<p>Nothing can be bought in a size nobody chose.</p>
+<ul>
+  <li>It applies to sizes only: options named in <span class="path">Theme settings &gt; Product page &gt; Size option names</span> (Size, Taille, Ring size and others, in any case). Color, Material, a gift card's amount and any other option start on the first choice in stock, so a gift card or a product without sizes reads <strong>Add to bag</strong> at once.</li>
+  <li>No size is preselected, unless the link names a variant or only one size is in stock (<span class="path">Theme settings &gt; Product page &gt; Select a size for the shopper</span>).</li>
+  <li>Until a size is chosen, Add to bag reads <strong>Select a size</strong> and adds nothing. Pressing it moves to the sizes.</li>
+  <li>Express checkout buttons wait, dimmed, with the line "Select a size to use express checkout." (<span class="path">Product page &gt; Wait for a size before express checkout</span>; the buttons keep their own colors.)</li>
+  <li>The buy bar on phones, quick add and quick view follow the same rule.</li>
+  <li>Sold-out sizes stay visible and can be chosen; choosing one shows <strong>Ask about this size</strong>, which opens Client care with the product, color, size and style code. Screen readers hear "FR 34, sold out, ask about this size".</li>
+  <li>The size label names its system, for example "Size (FR)", from <strong>Size system label</strong>. Low stock shows only if you turn it on, only for tracked inventory.</li>
+  <li>Without JavaScript, a plain list of sizes stands in, and the shopper still has to choose one.</li>
+</ul>
+
+<h2 id="arrange-a-visit">Arrange a visit</h2>
+<p>Shoppers can ask to visit a boutique or the workroom. Shopify does not allow themes to take bookings, so Barathea sends the request to a place you choose:</p>
+<ul>
+  <li>With a <strong>Booking link</strong> in <span class="path">Theme settings &gt; Client care</span> (for example the page of a booking app you use), <strong>Arrange a visit</strong> goes there.</li>
+  <li>Without one, it opens your contact page with the topic <code>visit</code> chosen. The form has a free-text <strong>When suits you</strong> field and, if you list them, a choice of boutique. There is no date or time picker.</li>
+</ul>
+<h3>Set it up</h3>
+<ol class="steps">
+  <li>In the Contact form section, keep a Topic block named "Arrange a visit" with the topic code <code>visit</code> (it is there by default). Topics are yours to rename and reorder.</li>
+  <li>For a page of its own, create a page "Arrange a visit" with the contact template and put the visit topic first. Menus can link to <code>/pages/arrange-a-visit?topic=visit</code>.</li>
+  <li>The Arrange a visit block of the Client care panel, the Boutiques section and the Address section all use the same path, unless you give them a link of their own.</li>
+</ol>
+
+<h2 id="promises">Promises per market</h2>
+<p>Delivery times, returns windows and duties differ by country. Barathea keeps them in one place, so the bag, the product page and your Shipping and returns page always agree.</p>
+<ol class="steps">
+  <li>In <span class="path">Theme settings &gt; Shipping and returns</span>, give up to three groups of countries (two-letter codes, for example <code>AE, SA, KW</code>) a delivery time, a returns window and a duties choice: Do not mention, We pay them, Included in the price, or May be due on delivery. Then fill in <strong>Every other country</strong>. A part left empty is not shown. Never type prices or currencies here.</li>
+  <li>Shoppers then see one line for their own country, in the bag and under Add to bag: "Delivery to France in 2-4 working days / Returns within 14 days / Duties and import taxes on us".</li>
+  <li>The <a href="sections.html#section-delivery-returns">Shipping and returns</a> section prints the whole table on a page, with your shipping and refund policies.</li>
+</ol>
+<p>Two more places follow the shopper's country:</p>
+<ul>
+  <li><strong>The promises line.</strong> Three short promises in <span class="path">Theme settings &gt; Bag</span>, shown in the bag and under Add to bag. An empty field uses the theme's wording (First alteration free; Delivery in 2-4 working days; Returns within 30 days); a single dash leaves one out. They are promises to your customers: change or remove any your store does not keep. On the product page, the <strong>Promises and help</strong> block can show each promise in some countries only.</li>
+  <li><strong>The announcement bar.</strong> Each message has <strong>Show in countries</strong>.</li>
+</ul>
+<p>Compare-at prices can follow the market as well: see <span class="path">Theme settings &gt; Prices</span>.</p>
+
+<h2 id="final-sale">Final sale</h2>
+<p>A product that cannot be returned says so, quietly, before it is bought: "Final sale. This item can't be returned." with a link to your refund policy. The line shows above Add to bag and on the product's line in the bag, and a line item property "Final sale: Yes" carries it to checkout and the order.</p>
+<p>A product is final sale when, in <span class="path">Theme settings &gt; Shipping and returns</span>:</p>
+<ul>
+  <li>it has the <strong>Product tag</strong> (default <code>final-sale</code>, in any letter case), or</li>
+  <li>it is in one of the <strong>Final sale collections</strong>, or</li>
+  <li><strong>Personalized items are final sale</strong> is on and the shopper personalizes it.</li>
+</ul>
+<p><strong>Final sale line</strong> changes the wording; left empty, the standard line follows the shopper's language.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html" aria-current="page">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>

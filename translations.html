@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Translations and right-to-left | Barathea theme</title>
+<meta name="description" content="Languages in Barathea 1.0.0: English included, how to translate the theme's words, and the status of right-to-left support.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="config.js" defer></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<!-- shell:top -->
+<a class="skip" href="#main">Skip to content</a>
+<p class="notice">Version 1.0.0 <span aria-hidden="true">/</span> A person replies to support within one business day</p>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><span class="wordmark__name">Barathea</span> <span class="wordmark__label">Theme documentation</span></a>
+    <a class="masthead__contents" href="#docs-nav">Contents</a>
+  </div>
+</header>
+<!-- /shell:top -->
+<div class="frame">
+<main id="main" tabindex="-1">
+<header class="page-head">
+  <p class="kicker">Good to know</p>
+  <h1>Translations and right-to-left</h1>
+  <p class="lede">Version 1.0.0 ships in English. Every word the theme shows can be translated, and the layout mirrors for right-to-left languages.</p>
+</header>
+
+<h2 id="status">Status in 1.0.0</h2>
+<div class="table-wrap">
+<table class="stack">
+  <caption>Language support</caption>
+  <thead><tr><th scope="col">Part</th><th scope="col">Status</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Storefront words (buttons, labels, messages)</th><td data-label="Status">English. Every word is in the theme's language file, none is fixed in the code, so all can be translated.</td></tr>
+    <tr><th scope="row">Theme editor (setting names and help)</th><td data-label="Status">English.</td></tr>
+    <tr><th scope="row">Other storefront languages</th><td data-label="Status">Not included yet. Add your own with the tools below.</td></tr>
+    <tr><th scope="row">Right-to-left layout</th><td data-label="Status">Built in: the page direction follows the shop language. Not yet checked end to end in a full Arabic or Hebrew store.</td></tr>
+    <tr><th scope="row">Fonts for Arabic and Hebrew</th><td data-label="Status">The two font settings apply to every language. A separate pair of fonts for right-to-left languages is planned for a later version.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="translate">Translating the theme</h2>
+<ul>
+  <li><strong>One language, your own wording:</strong> <span class="path">Online Store &gt; Themes &gt; ... &gt; Edit default theme content</span>. Search for a word and change it; your text replaces the theme's in the store.</li>
+  <li><strong>More than one language:</strong> add languages in <span class="path">Settings &gt; Languages</span>, then translate with Shopify's free Translate and Adapt app. The footer and the phone menu show a language selector once a second language is published.</li>
+  <li>Your own content (products, collections, pages, menus and the text you type into sections) is translated in the same app.</li>
+</ul>
+<p>Some lines follow the shopper's language by themselves when their setting is left empty, for example the promises in the bag and the final sale line. Text you type into a setting is shown as you typed it.</p>
+
+<h2 id="rtl">Right-to-left languages</h2>
+<p>For Arabic, Hebrew, Persian, Urdu and the other right-to-left languages Shopify supports, the theme sets the page direction to right-to-left. Layouts use start and end rather than left and right, so they mirror without extra settings:</p>
+<ul>
+  <li>pictures on the "start" side move to the right, and drawers open from the other side;</li>
+  <li>arrows and chevrons point the other way;</li>
+  <li>labels drop capitals and letter spacing, which do not suit those scripts (<strong>Capital letters for labels and buttons</strong> is never applied in right-to-left languages).</li>
+</ul>
+<p>If the fonts you pick have no Arabic or Hebrew letters, browsers use the device's own font for those letters. If anything reads wrong in a right-to-left language, please tell us: see <a href="support.html">Support</a>.</p>
+</main>
+<!-- shell:nav -->
+<nav class="docs-nav" id="docs-nav" aria-label="Documentation">
+  <p class="docs-nav__group">Start</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">Getting started</a></li>
+    <li><a href="presets.html">Presets</a></li>
+    <li><a href="signature-features.html">Signature features</a></li>
+  </ul>
+  <p class="docs-nav__group">Set up your store</p>
+  <ul>
+    <li><a href="product-setup.html">Product setup</a></li>
+    <li><a href="collections-and-lines.html">Collections and lines</a></li>
+    <li><a href="pages.html">Pages</a></li>
+    <li><a href="journal.html">Journal</a></li>
+  </ul>
+  <p class="docs-nav__group">Reference</p>
+  <ul>
+    <li><a href="sections.html">Sections and blocks</a></li>
+    <li><a href="theme-settings.html">Theme settings</a></li>
+  </ul>
+  <p class="docs-nav__group">Good to know</p>
+  <ul>
+    <li><a href="apps.html">Apps that pair well</a></li>
+    <li><a href="translations.html" aria-current="page">Translations and right-to-left</a></li>
+    <li><a href="accessibility-performance.html">Accessibility and performance</a></li>
+  </ul>
+  <p class="docs-nav__group">Help</p>
+  <ul>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="changelog.html">Changelog</a></li>
+  </ul>
+</nav>
+<!-- /shell:nav -->
+</div>
+<!-- shell:foot -->
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <p class="site-foot__name">Barathea</p>
+    <p>A Shopify theme by Barathea Studio. These pages describe version 1.0.0.</p>
+    <p>Support: <a class="service" data-config="SUPPORT_EMAIL" href="support.html#email">write to us</a>. A person replies within one business day, Monday to Friday.</p>
+    <p class="site-foot__small"><a href="support.html">What support covers</a> <span aria-hidden="true">/</span> <a href="changelog.html">Changelog</a> <span aria-hidden="true">/</span> <a href="#main">Back to top</a></p>
+  </div>
+</footer>
+<!-- /shell:foot -->
+</body>
+</html>
