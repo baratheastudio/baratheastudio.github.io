@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Signature features | Barathea theme</title>
-<meta name="description" content="What sets Barathea apart and how to set each part up: Shop the look, the index, Client care with context, pacing, the card, size before buy, Arrange a visit, promises per market and final sale.">
+<meta name="description" content="What sets Barathea apart and how to set each part up: Shop the look, the index, Client care with context, pacing, the card, size before buy, Plan a visit, promises per market and final sale.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
     <li><a href="#pacing">Pacing and the night band</a></li>
     <li><a href="#the-card">The card</a></li>
     <li><a href="#size-before-buy">Size before buy</a></li>
-    <li><a href="#arrange-a-visit">Arrange a visit</a></li>
+    <li><a href="#plan-a-visit">Plan a visit</a></li>
     <li><a href="#promises">Promises per market</a></li>
     <li><a href="#final-sale">Final sale</a></li>
   </ul>
@@ -66,6 +66,64 @@
   <p class="label">Good to know</p>
   <p>A phone picture is a different picture, so the rings and dots are hidden on phones when you set one. With <strong>Products: This collection</strong> on a line template shared by several lines, the section uses each collection's own picture and products; it then prints no rings and the count reads "From this line". For rings on a line page, give that line <a href="collections-and-lines.html#per-line-templates">its own template</a>.</p>
 </div>
+<h3 id="opener-links">Links and buttons</h3>
+<p>The credit of a <a href="sections.html#section-story-shop">Shop the look</a> or an <a href="sections.html#section-band">Image banner</a> section takes up to two links. Each one shows only when it has both a label and a link. <strong>Link style</strong> sets how they look:</p>
+<ul>
+  <li><strong>Text links</strong> (the default): underlined links after the text and the count, the quiet look of a credit under a picture.</li>
+  <li><strong>Buttons</strong>: a row under the text, the first link as a filled button and the second as an outline button. It suits the section that opens the home page. The second button is always an outline, whatever <span class="path">Theme settings &gt; Buttons &gt; Secondary actions</span> is set to, so the two read as a pair whatever that setting is.</li>
+</ul>
+<p>The buttons are as tall as every other button (<strong>Button and field height</strong> in <span class="path">Theme settings &gt; Buttons</span>, 44 px at least). On phones they share one row, each half the width, and a long label wraps inside its button; in the Spread layout of Shop the look they stay on the first screen. Over a picture they sit on the same soft shade as the text, and the outline button keeps a little of that shade behind its label so it reads on a light picture too.</p>
+<div class="table-wrap">
+<table class="stack">
+  <caption>The home opener in the preset (Image banner)</caption>
+  <thead><tr><th scope="col">Setting</th><th scope="col">Value</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Top line</th><td data-label="Value">This season</td></tr>
+    <tr><th scope="row">Text</th><td data-label="Value">Six designers in one shop. Everything is measured and photographed before it is listed.</td></tr>
+    <tr><th scope="row">Link label and Link</th><td data-label="Value">Shop new in, to <code>/collections/all</code></td></tr>
+    <tr><th scope="row">Second link label and Second link</th><td data-label="Value">Our designers, to <code>/collections</code></td></tr>
+    <tr><th scope="row">Link style</th><td data-label="Value">Buttons</td></tr>
+    <tr><th scope="row">Text position and Text side</th><td data-label="Value">Beside the image, Text side Start: the text on the left, the picture on the right (see <a href="#text-beside">Text beside the picture</a>)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The preset links go to pages every store has: all products and the Collections page. Point them at your own collection and page, as the demo store does (Ostrel's go to its New in collection and its Our designers page). Any Shop the look or Image banner you add yourself, the night band included, starts with Text links and no second link. The Shop the look tile in the product grid and the Shop the look block in a story keep their one text link.</p>
+<h3>Add a second button</h3>
+<ol class="steps">
+  <li>In the theme editor, open the home page and select its first section: in the preset, the Image banner. A Shop the look you put first works the same way.</li>
+  <li>Fill <strong>Link label</strong> and <strong>Link</strong> with the main way in, for example "Shop new in" and your New in collection.</li>
+  <li>Fill <strong>Second link label</strong> and <strong>Second link</strong>, for example "Our designers" and your designers page.</li>
+  <li>Set <strong>Link style</strong> to Buttons. Keep both labels short, two or three words, so each fits its half of the row on a phone.</li>
+</ol>
+<h3>Switch to text links</h3>
+<p>Set <strong>Link style</strong> to Text links. Both links stay, as underlined text after the credit; to keep only one, empty the second label or link. Nothing else changes.</p>
+<h3 id="text-beside">Text beside the picture</h3>
+<p>An <a href="sections.html#section-band">Image banner</a> sets its credit (the top line, heading, text and links) beneath the picture, over it, or beside it. Set <strong>Text position</strong> to Beside the image and, on a laptop or a larger screen, the whole picture and the whole credit show together on the first screen, side by side, and neither covers the other.</p>
+<dl class="rows">
+  <div><dt>On computers</dt><dd>From laptop width (990 px), the credit stands in a column of its own, centered on the height of the picture, and the picture takes the other side. The picture is as tall as the first screen allows under the announcement bar and the header, so the heading, the text and both buttons show without scrolling, on a 1280 x 800 laptop as on a 1920 x 1080 screen. The picture stays inside the page margins.</dd></div>
+  <div><dt>On phones and tablets</dt><dd>Below laptop width it is the same as Beneath the image: the picture first, in the section's <strong>Shape</strong> and <strong>Full width</strong>, then the credit under it. With the text beside the picture, those two settings apply to phones and tablets only.</dd></div>
+  <div><dt>Text side</dt><dd>Start (the default) puts the credit on the left and the picture on the right; End swaps them. In a right-to-left language, Start is the right side. Phones always show the picture first.</dd></div>
+  <div><dt>The picture it shows</dt><dd>Beside the text, the section shows a portrait picture. With a <strong>Phone image</strong> set, computers show that one too, in its own shape: a portrait crop of the same picture (4:5) is what it is made for. Without one, the main image is cropped to 4:5 around its focal point; set the focal point in <span class="path">Content &gt; Files</span> so the crop keeps the subject.</dd></div>
+</dl>
+<p>A row of products, when <strong>Show products beneath</strong> is on, still follows under the picture and the credit. Placed first on the home page, the picture is still the first one to load and the credit's heading is still the page heading. With a phone image, phones and computers each download one picture.</p>
+<h3>When to pick it</h3>
+<ul>
+  <li>The text is hard to read over the picture: a pale ground, such as a white wall, linen or sand, or a busy one.</li>
+  <li>Text over the picture would cover what it shows, a bag or a pair of shoes, on a phone.</li>
+  <li>Beneath a wide picture, the buttons start below the first screen of a laptop.</li>
+</ul>
+<p>Keep Beneath the image for a banner further down the page, and Over the image for a dark, quiet picture with room for the words. The preset's home opens with an Image banner beside its picture, Text side Start.</p>
+<h3>Put the text beside the picture</h3>
+<ol class="steps">
+  <li>In the theme editor, select the Image banner: in the preset, the home page's first section.</li>
+  <li>Set <strong>Text position</strong> to Beside the image, and <strong>Text side</strong> to Start or End.</li>
+  <li>Set a <strong>Phone image</strong>: a portrait crop (4:5) of the same picture, at least 1600 px on the long side. Computers show it beside the text and phones show it in place of the wide one.</li>
+  <li>Preview the page at laptop width and on a phone. Keep the heading to two lines or fewer and the button labels short, two or three words.</li>
+</ol>
+<div class="callout">
+  <p class="label">Good to know</p>
+  <p>A header set to sit over the first section (<strong>Over the first section on the home page</strong>) does so over a banner with its text beside the picture only in a dark color scheme, such as the night scheme; on computers the picture and the credit then start below the header. In a light color scheme the header stays solid above the banner, on phones too, so its light text is never printed on a light ground.</p>
+</div>
 
 <h2 id="the-index">The index</h2>
 <p>Names come first. Menus, lines and designers are set as a text index, and one picture beside them follows the name under the pointer or keyboard focus. The picture never holds a link and loads only when a shopper first shows interest, so the index stays light.</p>
@@ -78,13 +136,44 @@
 </ul>
 <h3>Set it up</h3>
 <p>Give every collection a picture (portrait 4:5 works best) and a short description; the index uses both. Build your main menu in <span class="path">Online Store &gt; Navigation</span>, up to three levels. See <a href="collections-and-lines.html">Collections and lines</a>.</p>
+<h3 id="index-rows">Rows of the Collection index</h3>
+<p>Each name in a <a href="sections.html#section-collection-index">Collection index</a> is one link across the whole row. The section's settings under <strong>Rows</strong>, <strong>Pictures</strong> and <strong>Link under the list</strong> say what else the rows carry:</p>
+<dl class="rows">
+  <div><dt>Show one line under each name</dt><dd>A short line in a quieter type: the block's <strong>Line under the name</strong>, or else the start of the collection's description. A few words read best, for example "Structured bags and pumps".</dd></div>
+  <div><dt>Show the number of products</dt><dd>The collection's product count under the name, for example "7 styles" ("1 style" for one). A collection with no products shows no count. Off by default.</dd></div>
+  <div><dt>Show an arrow at the end of each row</dt><dd>A small arrow at the far end of the row, so the whole width reads as a link. It moves a little when the row is pointed at or reached by keyboard, and points the other way in right-to-left languages. Off by default.</dd></div>
+  <div><dt>Show lines between rows</dt><dd>A hairline above the first row and under every row, in the color scheme's hairline color. Off by default.</dd></div>
+  <div><dt>Small image shape</dt><dd>The shape of the small pictures on phones: Portrait 4:5 (72 px wide, the default) or Square (80 px). They show the block's <strong>Preview image</strong>, or else the collection's picture, cropped around its focal point, and only when every row has one.</dd></div>
+  <div><dt>Link label and Link</dt><dd>One link after the last row, for example "All designers" to the page that lists every designer. With the link empty, nothing shows; with the label empty, it reads "View all". It takes the secondary style of <span class="path">Theme settings &gt; Buttons</span>: a text link in the preset, an outline button if you choose Outline button there.</dd></div>
+</dl>
+<p>The line, the count, the arrow, the hairlines and the link show at every screen size. On computers the preview picture still follows the pointer beside the list; the small pictures are for phones.</p>
+<div class="table-wrap">
+<table class="stack">
+  <caption>The home Collection index in the preset (Designers)</caption>
+  <thead><tr><th scope="col">Setting</th><th scope="col">Value</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Show one line under each name</th><td data-label="Value">On, one line per designer, for example "Structured bags and pumps"</td></tr>
+    <tr><th scope="row">Show the number of products</th><td data-label="Value">On</td></tr>
+    <tr><th scope="row">Show an arrow at the end of each row</th><td data-label="Value">On</td></tr>
+    <tr><th scope="row">Show lines between rows</th><td data-label="Value">On</td></tr>
+    <tr><th scope="row">Preview shape and Small image shape</th><td data-label="Value">Portrait 4:5 preview, square small pictures</td></tr>
+    <tr><th scope="row">Link under the list</th><td data-label="Value">All designers, to <code>/collections</code> (the Index A-Z page)</td></tr>
+  </tbody>
+</table>
+</div>
+<h3>Show product counts</h3>
+<ol class="steps">
+  <li>In the theme editor, select the Collection index section.</li>
+  <li>Under <strong>Rows</strong>, turn on <strong>Show the number of products</strong>. Each row now counts its collection's products.</li>
+  <li>To change the word, open <span class="path">Online Store &gt; Themes &gt; ... &gt; Edit default theme content</span> and search for "styles". The count has two forms, one for 1 ("1 style") and one for any other number ("7 styles"); change the word in both and leave the number's place as it is.</li>
+</ol>
 
 <h2 id="client-care">Client care with context</h2>
-<p>One panel holds every way to reach your team: call (with your hours), a message link, email, write to us, Arrange a visit, boutiques and the size guide. It opens from the header, the phone menu, the product page (<strong>Ask an adviser</strong>), a sold-out size (<strong>Ask about this size</strong>), quick add, the bag, the footer, a search with no results and the size guide. When opened from a product, it starts with a line about what the shopper is looking at:</p>
-<pre><code>About: Long coat, Black, FR 38, Style FC-0112</code></pre>
+<p>One panel holds every way to reach your team: call (with your hours), a message link, email, write to us, Plan a visit, boutiques and the size guide. The preset's panel starts short, with call, email and the size guide; add the others as blocks when your store offers them. It opens from the header, the phone menu, the product page (<strong>Ask an adviser</strong>), a sold-out size (<strong>Ask about this size</strong>), quick add, the bag, the footer, a search with no results and the size guide. When opened from a product, it starts with a line about what the shopper is looking at:</p>
+<pre><code>About: Pump 85, Black, EU 38, Style IL-3008-BLK-38</code></pre>
 <h3>Set it up</h3>
 <ol class="steps">
-  <li>Fill in <span class="path">Theme settings &gt; Client care</span>: phone number, opening hours, message link, email address, booking link, and the Contact, Boutiques and Size guide pages. Every item hides while its setting is empty; with nothing filled in, the Client care link hides too.</li>
+  <li>Fill in <span class="path">Theme settings &gt; Client care</span>: phone number, opening hours, message link, email address, Visit page link, and the Contact, Boutiques and Size guide pages. Every item hides while its setting is empty; with nothing filled in, the Client care link hides too.</li>
   <li>In the header group, the <strong>Client care panel</strong> section sets the order of the items with its blocks. Its setting <strong>Show what the shopper asks about</strong> turns the About line on or off.</li>
   <li>Make a Contact page with the <strong>contact</strong> template. Its Contact form has one Topic block per topic; the <strong>Topic code</strong> lets a link choose it (Client care uses <code>visit</code>, <code>repair</code>, <code>advice</code>, <code>personalization</code> and <code>order</code>).</li>
 </ol>
@@ -96,10 +185,10 @@
 </ul>
 
 <h2 id="pacing">Pacing and the night band</h2>
-<p>Barathea separates sections with space, a change of ground or a change of picture, never with divider lines. A page reads as a rhythm: white sections, then an ink one, then white again.</p>
+<p>Barathea separates sections with space, a change of ground or a change of picture, never with divider lines. A page reads as a rhythm: in the preset, products on the concrete page ground and on white, and the stone ground near the end of the page; an ink section changes the pace when a page needs one.</p>
 <ul>
   <li><strong>Color schemes</strong> carry the rhythm. Scheme 1 is the page ground, scheme 2 a quiet ground, scheme 3 the night ground and scheme 4 the season ground; every section picks one. Pictures stay light on the night ground.</li>
-  <li><strong>The night band</strong> is the <a href="sections.html#section-band">Image banner</a> added from <strong>Night banner with products</strong>: a wide picture in the night scheme with its credit and a row of products beneath. Use one per page.</li>
+  <li><strong>The night band</strong> is the <a href="sections.html#section-band">Image banner</a> added from <strong>Night banner</strong>: a wide picture in the night scheme with its credit and a row of products beneath. The preset's home page has none; use one per page at most.</li>
   <li><strong>Scale</strong> sets pace too: <a href="sections.html#section-large-text">Large text</a> for one sentence, <a href="sections.html#section-spotlight">Product spotlight</a> for one product alone on a plain field.</li>
   <li><strong>Space between sections</strong> (<span class="path">Theme settings &gt; Layout</span>) scales every section's Small, Medium and Large spacing at once.</li>
   <li><strong>Text over pictures</strong> uses the scheme chosen in <span class="path">Theme settings &gt; Colors</span>, on a soft shade whose strength you set there.</li>
@@ -108,12 +197,12 @@
 <h2 id="the-card">The card</h2>
 <p>One product card is used everywhere products are listed: grids, rows, Shop the look, search and the product page's rows. Set it once in <span class="path">Theme settings &gt; Product cards</span>.</p>
 <ul>
-  <li><strong>Picture:</strong> portrait 4:5, tall 3:4 or square; edge to edge, or whole on the scheme's image ground, or blended so white photo backgrounds melt into that ground. A second picture on hover loads only when a shopper points at the card, on devices with a mouse.</li>
-  <li><strong>Top line:</strong> the product's line, vendor or type, above the name.</li>
+  <li><strong>Picture:</strong> square (the preset), portrait 4:5 or tall 3:4; edge to edge, or whole on the scheme's image ground, or blended so white photo backgrounds melt into that ground. A second picture on hover loads only when a shopper points at the card, on devices with a mouse.</li>
+  <li><strong>Top line:</strong> the product's vendor (the preset), line or type, above the name.</li>
   <li><strong>Material line:</strong> from the product's Subtitle metafield (<code>descriptors.subtitle</code>), or the type or vendor.</li>
   <li><strong>Badges:</strong> Sold out and Sale are automatic; Sale shows only when a compare-at price is higher and allowed in the shopper's market. Add others with product tags that start with <code>badge:</code>, for example <code>badge:New</code> or <code>badge:Made to order</code>. Up to two show.</li>
-  <li><strong>Colors:</strong> Shopify's own color and image swatches, or a count of colors. Choosing a color changes the card's picture and its quick add sizes.</li>
-  <li><strong>Quick add:</strong> one button opens the sizes of the color shown, and nothing is added before a size is chosen. Products with more than 8 sizes or more than 2 options open a quick view sheet instead.</li>
+  <li><strong>Colors:</strong> a count of colors (the preset), or Shopify's own color and image swatches. Choosing a color changes the card's picture and its quick add sizes.</li>
+  <li><strong>Quick add:</strong> one button opens the sizes of the color shown, and nothing is added before a size is chosen. Products with more than 8 sizes or more than 2 options open a quick view sheet instead, and so does a product with a minimum quantity above 1 (B2B quantity rules), so the shopper sees the rule before adding. See <a href="product-setup.html#quantity-rules">Quantity rules and volume pricing</a>.</li>
 </ul>
 <p>Each card has one link, the product name, stretched over the whole card, so keyboard users meet one stop per product.</p>
 
@@ -125,22 +214,22 @@
   <li>Until a size is chosen, Add to bag reads <strong>Select a size</strong> and adds nothing. Pressing it moves to the sizes.</li>
   <li>Express checkout buttons wait, dimmed, with the line "Select a size to use express checkout." (<span class="path">Product page &gt; Wait for a size before express checkout</span>; the buttons keep their own colors.)</li>
   <li>The buy bar on phones, quick add and quick view follow the same rule.</li>
-  <li>Sold-out sizes stay visible and can be chosen; choosing one shows <strong>Ask about this size</strong>, which opens Client care with the product, color, size and style code. Screen readers hear "FR 34, sold out, ask about this size".</li>
-  <li>The size label names its system, for example "Size (FR)", from <strong>Size system label</strong>. Low stock shows only if you turn it on, only for tracked inventory.</li>
+  <li>Sold-out sizes stay visible and can be chosen; choosing one shows <strong>Ask about this size</strong>, which opens Client care with the product, color, size and style code. Screen readers hear "EU 38, sold out, ask about this size".</li>
+  <li>The size label names its system, for example "Size (EU)", from <strong>Size system label</strong>. Low stock shows only if you turn it on, only for tracked inventory.</li>
   <li>Without JavaScript, a plain list of sizes stands in, and the shopper still has to choose one.</li>
 </ul>
 
-<h2 id="arrange-a-visit">Arrange a visit</h2>
-<p>Shoppers can ask to visit a boutique or the workroom. Shopify does not allow themes to take bookings, so Barathea sends the request to a place you choose:</p>
+<h2 id="plan-a-visit">Plan a visit</h2>
+<p>Shoppers can ask to visit your shop or a boutique. Shopify does not allow themes to take bookings, and Barathea takes none: <strong>Plan a visit</strong> is a plain link to a place you choose.</p>
 <ul>
-  <li>With a <strong>Booking link</strong> in <span class="path">Theme settings &gt; Client care</span> (for example the page of a booking app you use), <strong>Arrange a visit</strong> goes there.</li>
-  <li>Without one, it opens your contact page with the topic <code>visit</code> chosen. The form has a free-text <strong>When suits you</strong> field and, if you list them, a choice of boutique. There is no date or time picker.</li>
+  <li>With a <strong>Visit page link</strong> in <span class="path">Theme settings &gt; Client care</span> (a page of your own about visiting you: where you are, when you are open, how to find you), Plan a visit goes there.</li>
+  <li>Without one, it opens your contact page with the topic <code>visit</code> chosen. The form has a free-text <strong>Best time to reach you</strong> field and, if you list them, a choice of boutique. There is no date or time picker.</li>
 </ul>
 <h3>Set it up</h3>
 <ol class="steps">
-  <li>In the Contact form section, keep a Topic block named "Arrange a visit" with the topic code <code>visit</code> (it is there by default). Topics are yours to rename and reorder.</li>
-  <li>For a page of its own, create a page "Arrange a visit" with the contact template and put the visit topic first. Menus can link to <code>/pages/arrange-a-visit?topic=visit</code>.</li>
-  <li>The Arrange a visit block of the Client care panel, the Boutiques section and the Address section all use the same path, unless you give them a link of their own.</li>
+  <li>In the Contact form section, keep a Topic block named "Plan a visit" with the topic code <code>visit</code> (it is there by default). Topics are yours to rename and reorder.</li>
+  <li>For a page of its own, create a page "Plan a visit" with the contact template and put the visit topic first. Menus can link to <code>/pages/plan-a-visit?topic=visit</code>.</li>
+  <li>The Plan a visit block of the Client care panel, the Boutiques section and the Address and hours section all use the same path, unless you give them a link of their own (<strong>Visit page link</strong> on a boutique).</li>
 </ol>
 
 <h2 id="promises">Promises per market</h2>
@@ -152,7 +241,7 @@
 </ol>
 <p>Two more places follow the shopper's country:</p>
 <ul>
-  <li><strong>The promises line.</strong> Three short promises in <span class="path">Theme settings &gt; Bag</span>, shown in the bag and under Add to bag. An empty field uses the theme's wording (First alteration free; Delivery in 2-4 working days; Returns within 30 days); a single dash leaves one out. They are promises to your customers: change or remove any your store does not keep. On the product page, the <strong>Promises and help</strong> block can show each promise in some countries only.</li>
+  <li><strong>The promises line.</strong> Up to three short promises in <span class="path">Theme settings &gt; Bag</span>, shown in the bag and under Add to bag, for example your delivery time or your returns window. The theme ships none and adds no wording of its own: type only what your store keeps. An empty field shows nothing, and <strong>Show the promises</strong> off removes the line. On the product page, the <strong>Promises and help</strong> block can show each promise in some countries only.</li>
   <li><strong>The announcement bar.</strong> Each message has <strong>Show in countries</strong>.</li>
 </ul>
 <p>Compare-at prices can follow the market as well: see <span class="path">Theme settings &gt; Prices</span>.</p>
@@ -173,7 +262,7 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="getting-started.html">Getting started</a></li>
-    <li><a href="presets.html">Presets</a></li>
+    <li><a href="presets.html">The preset</a></li>
     <li><a href="signature-features.html" aria-current="page">Signature features</a></li>
   </ul>
   <p class="docs-nav__group">Set up your store</p>

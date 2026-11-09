@@ -14,8 +14,9 @@ window.BARATHEA_DOCS = {
   DOCS_BASE: 'https://baratheastudio.github.io',
   // The support inbox merchants write to.
   SUPPORT_EMAIL: 'baratheastudio@gmail.com',
-  // Demo stores, one per preset. Placeholders until the stores are open, for example
-  // HALVARDE_URL: 'https://example-demo-store.myshopify.com',
-  HALVARDE_URL: '{{HALVARDE_URL}}',
+  // The support contact form (Google Forms on the support Gmail).
+  SUPPORT_FORM: 'https://forms.gle/MPHKFV29B4oSrytU8',
+  // The demo store of the preset (Ostrel). A placeholder until the store opens to the
+  // public, for example OSTREL_URL: 'https://example-demo-store.myshopify.com',
   OSTREL_URL: '{{OSTREL_URL}}'
 };

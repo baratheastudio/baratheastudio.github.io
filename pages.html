@@ -29,7 +29,7 @@
 <header class="page-head">
   <p class="kicker">Set up your store</p>
   <h1>Pages</h1>
-  <p class="lede">Barathea comes with a template for each page a fashion house usually needs. Each is a set of sections you can change, reorder or remove.</p>
+  <p class="lede">Barathea comes with a template for each page a boutique usually needs. Each is a set of sections you can change, reorder or remove.</p>
 </header>
 
 <h2 id="how">Making a page</h2>
@@ -38,7 +38,7 @@
   <li>Open it in the theme editor (choose the template from the menu at the top) and fill its sections.</li>
   <li>Link it from a menu, and from <span class="path">Theme settings &gt; Client care</span> where it is a Client care page.</li>
 </ol>
-<p>The page's own text shows in the <strong>Page</strong> section, which every template has (first, except on Workroom, where it follows the Hero); turn off <strong>Show the page content</strong> to show only the sections, or <strong>Hide the title</strong> to keep it for screen readers and search only. Template sections hold sample text until you change it.</p>
+<p>The page's own text shows in the <strong>Page</strong> section, which every template has (first, except on Workroom, where it follows the Hero); turn off <strong>Show the page content</strong> to show only the sections, or <strong>Hide the title</strong> to keep it for screen readers and search only. Template sections hold sample text until you change it. The sample text makes no promises for you (no delivery times, free services or turnaround times), and the Boutiques template has no address: add what is true for your store. The sample text is a boutique's that sells bags and shoes from many designers: replace it with your own.</p>
 
 <h2 id="templates">The templates</h2>
 <div class="table-wrap">
@@ -47,17 +47,17 @@
   <thead><tr><th scope="col">Template</th><th scope="col">Sections</th><th scope="col">Use it for</th></tr></thead>
   <tbody>
     <tr><th scope="row"><code>page</code></th><td data-label="Sections">Page</td><td data-label="Use it for">Any page of plain text, such as your terms.</td></tr>
-    <tr><th scope="row"><code>page.about</code></th><td data-label="Sections">Page, Rich text, Numbers, Two images, Steps and values, Large text</td><td data-label="Use it for">About the house: what you make, a few facts, the workroom, how you work.</td></tr>
+    <tr><th scope="row"><code>page.about</code></th><td data-label="Sections">Page, Rich text, Numbers, Two images, Steps and values, Large text</td><td data-label="Use it for">About the shop or the house: what you stock or make, a few facts, how you choose or how you work.</td></tr>
     <tr><th scope="row"><code>page.client-care</code></th><td data-label="Sections">Page, Service links, FAQ, Contact form</td><td data-label="Use it for">One page for help: your services, the common questions and a way to write.</td></tr>
-    <tr><th scope="row"><code>page.contact</code></th><td data-label="Sections">Page, Contact form</td><td data-label="Use it for">Contact, and Arrange a visit (see below). Pick this page as the Contact page in Client care.</td></tr>
+    <tr><th scope="row"><code>page.contact</code></th><td data-label="Sections">Page, Contact form</td><td data-label="Use it for">Contact, and Plan a visit (see below). Pick this page as the Contact page in Client care.</td></tr>
     <tr><th scope="row"><code>page.boutiques</code></th><td data-label="Sections">Page, Boutiques</td><td data-label="Use it for">Your shops with hours, services and visit links. Pick it as the Boutiques page in Client care.</td></tr>
     <tr><th scope="row"><code>page.faq</code></th><td data-label="Sections">Page, FAQ</td><td data-label="Use it for">Questions in categories, with FAQ structured data.</td></tr>
     <tr><th scope="row"><code>page.size-guide</code></th><td data-label="Sections">Page, Size guide</td><td data-label="Use it for">The size guide that product pages open in a drawer. Pick it in Client care and in <span class="path">Theme settings &gt; Product page</span>.</td></tr>
     <tr><th scope="row"><code>page.shipping-returns</code></th><td data-label="Sections">Page, Shipping and returns, FAQ</td><td data-label="Use it for">Delivery and returns by country, your policies and a few questions.</td></tr>
     <tr><th scope="row"><code>page.gifting</code></th><td data-label="Sections">Page, Steps and values, Shipping and returns, Featured products</td><td data-label="Use it for">How gifts work: gift options in the bag, delivery, a row of gifts.</td></tr>
     <tr><th scope="row"><code>page.personalization</code></th><td data-label="Sections">Page, Steps and values, Two images, Rich text, Featured products</td><td data-label="Use it for">How personalization works, the styles, what to know before ordering, and the products you personalize.</td></tr>
-    <tr><th scope="row"><code>page.services</code></th><td data-label="Sections">Page, Large text, Price table, Service list, Contact form</td><td data-label="Use it for">Alterations and repairs with prices and usual times, and a request form.</td></tr>
-    <tr><th scope="row"><code>page.workroom</code></th><td data-label="Sections">Hero, Page, Feature with text (three), Shop the look, Large text</td><td data-label="Use it for">How things are made, step by step, with the products made there.</td></tr>
+    <tr><th scope="row"><code>page.services</code></th><td data-label="Sections">Page, Large text, Price table, Service list, Contact form</td><td data-label="Use it for">Repairs, care and alterations with your prices, and a request form.</td></tr>
+    <tr><th scope="row"><code>page.workroom</code></th><td data-label="Sections">Hero, Page, Feature with text (three), Shop the look, Large text</td><td data-label="Use it for">How things are chosen or made, step by step, with the products. The sample text tells how the shop chooses what it sells.</td></tr>
   </tbody>
 </table>
 </div>
@@ -65,19 +65,19 @@
 <h2 id="client-care-pages">Client care pages</h2>
 <p>Three pages power Client care, so set them first:</p>
 <dl class="rows">
-  <div><dt>Contact</dt><dd>Template <code>page.contact</code>. Write to us and Arrange a visit open it with the topic chosen and the shopper's product, color and size filled in. Its topics are blocks: rename, reorder or add them. The <strong>Topic code</strong> is what a link uses (<code>?topic=visit</code>).</dd></div>
-  <div><dt>Boutiques</dt><dd>Template <code>page.boutiques</code>. One Boutique block per shop: picture, name, city, address, hours for each day (today is marked, in the shop's time zone if you give one), phone, email, services, a visit link and a map link. A city filter appears with more than three boutiques in two cities or more.</dd></div>
-  <div><dt>Size guide</dt><dd>Template <code>page.size-guide</code>. Tabs (Women, Men, Shoes, Rings), How to measure and size tables. See <a href="product-setup.html#size-guide">Size guide</a>.</dd></div>
+  <div><dt>Contact</dt><dd>Template <code>page.contact</code>. Write to us and Plan a visit open it with the topic chosen and the shopper's product, color and size filled in. Its topics are blocks: rename, reorder or add them. The <strong>Topic code</strong> is what a link uses (<code>?topic=visit</code>).</dd></div>
+  <div><dt>Boutiques</dt><dd>Template <code>page.boutiques</code>. One Boutique block per shop: picture, name, city, address, hours for each day (today is marked, in the shop's time zone if you give one), phone, email, services, a visit page link and a map link. Directions show only for a boutique with an address or a map link. The template's one card, Our shop, has hours and services but no address: type yours. A city filter appears with more than three boutiques in two cities or more.</dd></div>
+  <div><dt>Size guide</dt><dd>Template <code>page.size-guide</code>. Tabs (Women, Men, Shoes with women's and men's tables, Rings), How to measure and size tables. Its shoe and ring tables convert exactly as the built-in tables of the product page drawer. See <a href="product-setup.html#size-guide">Size guide</a>.</dd></div>
 </dl>
 
-<h2 id="arrange-a-visit">An Arrange a visit page</h2>
-<p>Create a page named "Arrange a visit" with the <code>page.contact</code> template. In its Contact form, move the Arrange a visit topic to the top and write a line about visits in the form's text. Link to it as <code>/pages/arrange-a-visit?topic=visit</code>. If you would rather keep it apart from Contact, make a template for it in the editor (Create template, based on contact). See <a href="signature-features.html#arrange-a-visit">Arrange a visit</a>.</p>
+<h2 id="plan-a-visit">A Plan a visit page</h2>
+<p>Create a page named "Plan a visit" with the <code>page.contact</code> template. In its Contact form, move the Plan a visit topic to the top and write a line about visits in the form's text. Link to it as <code>/pages/plan-a-visit?topic=visit</code>. If you would rather keep it apart from Contact, make a template for it in the editor (Create template, based on contact). See <a href="signature-features.html#plan-a-visit">Plan a visit</a>.</p>
 
 <h2 id="policies">Policies</h2>
 <p>Write your refund, shipping, privacy and terms policies in <span class="path">Settings &gt; Policies</span>. The theme links to them from promises, the final sale line, product panels, the FAQ and the Shipping and returns section, so the words live in one place.</p>
 
 <h2 id="other-sections">More sections for pages</h2>
-<p>Any page can also take Address and hours, Team, Timeline, Letter, Quote, Logo wall, Collapsible content, Service list, Price table, Video and the picture sections. See <a href="sections.html">Sections and blocks</a>.</p>
+<p>Any page can also take Address and hours, Team, Timeline, Letter, Quote, Logo wall, Collapsible content, Service list, Price table, Video and the picture sections. Team, Letter and Quote print no name until you type one. See <a href="sections.html">Sections and blocks</a>.</p>
 </main>
 <!-- shell:nav -->
 <nav class="docs-nav" id="docs-nav" aria-label="Documentation">
@@ -85,7 +85,7 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="getting-started.html">Getting started</a></li>
-    <li><a href="presets.html">Presets</a></li>
+    <li><a href="presets.html">The preset</a></li>
     <li><a href="signature-features.html">Signature features</a></li>
   </ul>
   <p class="docs-nav__group">Set up your store</p>

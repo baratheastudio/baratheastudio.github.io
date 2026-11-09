@@ -29,7 +29,7 @@
 <header class="page-head">
   <p class="kicker">Reference</p>
   <h1>Theme settings</h1>
-  <p class="lede">Settings that apply across the whole store. Open them in the theme editor under <strong>Theme settings</strong>. Defaults below are the theme's own; each preset sets its own look values on top (see <a href="presets.html#settings">Presets</a>).</p>
+  <p class="lede">Settings that apply across the whole store. Open them in the theme editor under <strong>Theme settings</strong>. Defaults below are the theme's own; the Barathea preset sets its look values on top (see <a href="presets.html#settings">The preset</a>).</p>
 </header>
 <!-- ref:settings -->
 <nav class="toc" aria-label="On this page">
@@ -72,7 +72,7 @@
 </section>
 <section class="ref" id="settings-colors" aria-labelledby="settings-colors-title">
   <h2 id="settings-colors-title">Colors</h2>
-  <p>Each preset sets four schemes; their values are on <a href="presets.html#schemes">Presets</a>. If you change colors, keep text at 4.5:1 against its ground.</p>
+  <p>The preset sets four schemes; their values are on <a href="presets.html#schemes">The preset</a>. If you change colors, keep text at 4.5:1 against its ground.</p>
   <div class="table-wrap">
     <table class="ref-table">
       <caption>Colors settings</caption>
@@ -121,13 +121,13 @@
 </section>
 <section class="ref" id="settings-buttons" aria-labelledby="settings-buttons-title">
   <h2 id="settings-buttons-title">Buttons</h2>
-  <p>For how the buy buttons wait for a size, see <a href="signature-features.html#size-before-buy">Size before buy</a>.</p>
+  <p>For how the buy buttons wait for a size, see <a href="signature-features.html#size-before-buy">Size before buy</a>. For the buttons of an opening picture, see <a href="signature-features.html#opener-links">Links and buttons</a>.</p>
   <div class="table-wrap">
     <table class="ref-table">
       <caption>Buttons settings</caption>
       <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
       <tbody>
-      <tr class="ref-para"><td colspan="3">Filled buttons are kept for buying: add to bag, checkout and quick add. Every other action uses the secondary style.</td></tr>
+      <tr class="ref-para"><td colspan="3">Filled buttons are kept for buying: add to bag, checkout, quick add, and the first link of an Image banner or Shop the look set to Buttons (its second link is an outline). Every other action uses the secondary style.</td></tr>
       <tr><th scope="row">Button and field height</th><td>Slider, 44 to 56 px, in steps of 2<span class="ref__default">Default: 48 px</span></td><td class="ref__note"></td></tr>
       <tr><th scope="row">Secondary actions</th><td>Outline button / Text link<span class="ref__default">Default: Outline button</span></td><td class="ref__note">Used for filters, sign-up, forms and every action that is not a purchase.</td></tr>
       </tbody>
@@ -194,7 +194,7 @@
       <tr><th scope="row">Opening hours</th><td>Text</td><td class="ref__note">Shown under the phone number, for example Monday to Saturday, 10 am to 7 pm.</td></tr>
       <tr><th scope="row">Message link</th><td>Text</td><td class="ref__note">A messaging link, for example https://wa.me/15550100?text={context}. {context} becomes the product, color, size and style code the shopper asks about; {ref} becomes the place the chat started from (header, product, size, bag, footer).</td></tr>
       <tr><th scope="row">Email address</th><td>Text</td><td class="ref__note"></td></tr>
-      <tr><th scope="row">Booking link</th><td>Link</td><td class="ref__note">A plain link where Arrange a visit goes, for example a page of your booking app. Leave empty to use the contact form with the visit topic.</td></tr>
+      <tr><th scope="row">Visit page link</th><td>Link</td><td class="ref__note">A link to your own page about visiting you, where Plan a visit goes. Leave empty to use the contact form with the visit topic.</td></tr>
       <tr><th scope="row">Contact page</th><td>Page</td><td class="ref__note">Write to us opens this page with the topic and the product details filled in. Use the page.contact template.</td></tr>
       <tr><th scope="row">Boutiques page</th><td>Page</td><td class="ref__note"></td></tr>
       <tr><th scope="row">Size guide page</th><td>Page</td><td class="ref__note"></td></tr>
@@ -306,7 +306,7 @@
 </section>
 <section class="ref" id="settings-bag" aria-labelledby="settings-bag-title">
   <h2 id="settings-bag-title">Bag</h2>
-  <p>The three promises are promises to your customers; see <a href="signature-features.html#promises">Promises per market</a>.</p>
+  <p>The theme ships no promises: type only what your store keeps. See <a href="signature-features.html#promises">Promises per market</a>.</p>
   <div class="table-wrap">
     <table class="ref-table">
       <caption>Bag settings</caption>
@@ -314,18 +314,19 @@
       <tbody>
       <tr><th scope="row">After adding to the bag</th><td>Open the bag drawer / Go to the bag page / Show a short confirmation<span class="ref__default">Default: Open the bag drawer</span></td><td class="ref__note">The drawer opens the bag from the side. The confirmation is a short sheet with View bag and Checkout. The page goes to the bag page.</td></tr>
       <tr class="ref-sub"><th colspan="3" scope="colgroup">Gift options</th></tr>
-      <tr><th scope="row">Show gift options</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Gift wrapping, a gift message and leaving prices out of the parcel. Saved on the order as cart attributes.</td></tr>
-      <tr><th scope="row">Gift wrapping ticked by default</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+      <tr><th scope="row">Show gift options</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shows &quot;This is a gift&quot;, a gift message and leaving prices out of the parcel. Saved on the order as cart attributes.</td></tr>
+      <tr><th scope="row">Offer gift wrapping</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Adds a Gift wrapping box to the gift options. Turn it on only if you wrap orders.</td></tr>
+      <tr><th scope="row">Gift wrapping ticked by default</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Only when gift wrapping is offered.</td></tr>
       <tr><th scope="row">Longest gift message (characters)</th><td>Slider, 100 to 400, in steps of 20<span class="ref__default">Default: 200</span></td><td class="ref__note"></td></tr>
       <tr class="ref-sub"><th colspan="3" scope="colgroup">Delivery notes</th></tr>
       <tr><th scope="row">Show delivery notes on the bag page</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
       <tr><th scope="row">Delivery notes label</th><td>Text</td><td class="ref__note">Leave empty for &quot;Delivery notes&quot;.</td></tr>
       <tr class="ref-sub"><th colspan="3" scope="colgroup">Promises</th></tr>
-      <tr class="ref-para"><td colspan="3">These are promises to your customers: change or remove any your store does not keep. Three short promises shown as one line in the bag and under Add to bag. An empty field uses the theme's wording, in the shopper's language: First alteration free; Delivery in 2-4 working days; Returns within 30 days. Type a single dash (-) to leave one out.</td></tr>
+      <tr class="ref-para"><td colspan="3">Up to three short promises to your customers, shown as one line in the bag and under Add to bag, for example your delivery time or your returns window. Type only what your store keeps. The theme adds no wording of its own: an empty field shows nothing.</td></tr>
       <tr><th scope="row">Show the promises</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
-      <tr><th scope="row">First promise</th><td>Text</td><td class="ref__note">Empty: First alteration free</td></tr>
-      <tr><th scope="row">Second promise</th><td>Text</td><td class="ref__note">Empty: Delivery in 2-4 working days</td></tr>
-      <tr><th scope="row">Third promise</th><td>Text</td><td class="ref__note">Empty: Returns within 30 days</td></tr>
+      <tr><th scope="row">First promise</th><td>Text</td><td class="ref__note">Leave it empty to show nothing.</td></tr>
+      <tr><th scope="row">Second promise</th><td>Text</td><td class="ref__note">Leave it empty to show nothing.</td></tr>
+      <tr><th scope="row">Third promise</th><td>Text</td><td class="ref__note">Leave it empty to show nothing.</td></tr>
       <tr><th scope="row">Show the Client care phone line</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shows &quot;Questions? Call&quot; with the Client care phone and hours. Hidden when no phone is set.</td></tr>
       <tr class="ref-sub"><th colspan="3" scope="colgroup">Empty bag</th></tr>
       <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note">Leave empty for New in, in the shopper's language.</td></tr>
@@ -386,7 +387,7 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="getting-started.html">Getting started</a></li>
-    <li><a href="presets.html">Presets</a></li>
+    <li><a href="presets.html">The preset</a></li>
     <li><a href="signature-features.html">Signature features</a></li>
   </ul>
   <p class="docs-nav__group">Set up your store</p>

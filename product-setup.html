@@ -43,6 +43,7 @@
     <li><a href="#metafields">Metafields</a></li>
     <li><a href="#templates">Product templates</a></li>
     <li><a href="#tags">Tags</a></li>
+    <li><a href="#quantity-rules">Quantity rules and volume pricing</a></li>
     <li><a href="#more">Style codes, personalization, gift cards</a></li>
   </ul>
 </nav>
@@ -52,7 +53,7 @@
 <ul>
   <li>An option with a single value is printed as a line above the sizes ("Color: Camel"), not as a choice. You can turn this off in the Colors and sizes block.</li>
   <li>Combined listings work: each color can be its own product, and choosing a color moves to that product.</li>
-  <li>Quick add on cards handles one size option of up to 8 sizes, with or without a color, and adds a product with only a color as shown. Longer size runs, products with more than 2 options, products with an option that is neither a size nor a color (Material, a gift card's amount) and products with two options of which neither is a color open a quick view sheet.</li>
+  <li>Quick add on cards handles one size option of up to 8 sizes, with or without a color, and adds a product with only a color as shown. Longer size runs, products with more than 2 options, products with an option that is neither a size nor a color (Material, a gift card's amount) and products with two options of which neither is a color open a quick view sheet. So does a product with a minimum quantity above 1; see <a href="#quantity-rules">Quantity rules and volume pricing</a>.</li>
 </ul>
 
 <h2 id="sizes">Sizes and the size system</h2>
@@ -75,6 +76,7 @@ Shoes: size-guide#shoes
 Jewelry: size-guide#rings
 *: size-guide#women</code></pre>
 <p>Build the guide on a page with the <strong>size-guide</strong> template: one Tab block per tab (Women, Men, Shoes, Rings), each followed by its How to measure and Table blocks. A tab named "Women" opens with <code>?tab=women</code>; the drawer opens the tab from the rule. Tables marked "Measurements in cm" get a cm and inch switch.</p>
+<p>The size-guide template's Shoes tab has Women's shoes (EU 35 to 41) and Men's shoes (EU 40 to 46) tables, and its Rings tab eleven sizes, US 4 to 9. They convert exactly as the drawer's built-in tables, so a shoe or a ring converts the same way on the page and in the drawer. If you change a table, change it for your own sizing.</p>
 <p>Without any page, the drawer can show a built-in conversion table (Women's clothing, Men's tailoring, Shoes or Rings), chosen in the block or in <strong>Conversion table when there is no page</strong>.</p>
 
 <h2 id="swatches">Swatches</h2>
@@ -87,7 +89,7 @@ Jewelry: size-guide#rings
   <li>Pictures for every color first, for example a fabric close-up. They show with every color.</li>
   <li>Then each color's pictures together, starting with the picture set as that color's variant picture.</li>
 </ol>
-<p>A color's pictures run from its variant picture to the next variant picture. Give each color at least two pictures. Use the same shape across the store, at least 1600 px on the long side: portrait 4:5 for the Barathea look, square on pure white for the Plaster look.</p>
+<p>A color's pictures run from its variant picture to the next variant picture. Give each color at least two pictures. Use the same shape across the store, at least 1600 px on the long side: for the preset, square on pure white (<code>#FFFFFF</code>); portrait 4:5 if you set the cards and galleries to portrait.</p>
 
 <h2 id="metafields">Metafields</h2>
 <p>Two are Shopify's standard definitions: turn them on in <span class="path">Settings &gt; Custom data &gt; Products</span>. The two <code>custom</code> ones are yours to create, with exactly these namespace, key and type.</p>
@@ -109,12 +111,12 @@ Jewelry: size-guide#rings
 <h2 id="templates">Product templates</h2>
 <p>Pick a template for each product under <strong>Theme template</strong> in the product's admin page.</p>
 <dl class="rows">
-  <div><dt><code>product</code> (default)</dt><dd>Clothing and shoes. Portrait gallery, sizes with the Size guide link beside the label, Fit line, Promises and help, and three panels: Details, Care, Shipping and returns.</dd></div>
+  <div><dt><code>product</code> (default)</dt><dd>Shoes and clothing. Sizes with the Size guide link beside the label, Fit line, the quantity field, Promises and help, and three panels: Details, Care, Shipping and returns.</dd></div>
   <div><dt><code>product.bag</code></dt><dd>Bags and small leather goods. No size guide; Personalization (initials, up to 3 characters); a Dimensions table from <code>custom.dimensions</code>, open by default.</dd></div>
-  <div><dt><code>product.jewelry</code></dt><dd>Rings and cuffs. Square gallery, sizes labeled <code>mm</code>, a Size guide link (with no guide page found, it shows the built-in ring table), and Personalization (up to 12 characters).</dd></div>
+  <div><dt><code>product.jewelry</code></dt><dd>Rings and cuffs. Sizes labeled <code>mm</code>, a Size guide link (with no guide page found, it shows the built-in ring table), and Personalization (up to 12 characters).</dd></div>
   <div><dt><code>product.jewelry-plain</code></dt><dd>Earrings and chains. The jewelry page without Personalization and without the Size guide link.</dd></div>
 </dl>
-<p>Each template keeps its own block order and settings. To make another, open the editor's template menu and choose <strong>Create template</strong>, based on the closest one.</p>
+<p>In the preset, every product template has a square gallery that shows the whole picture, the designer above the name and the quantity field. Each template keeps its own block order and settings. To make another, open the editor's template menu and choose <strong>Create template</strong>, based on the closest one.</p>
 
 <h2 id="tags">Tags</h2>
 <dl class="rows">
@@ -122,6 +124,17 @@ Jewelry: size-guide#rings
   <div><dt><code>final-sale</code></dt><dd>Marks the product as final sale (the tag is set in <span class="path">Theme settings &gt; Shipping and returns</span>). See <a href="signature-features.html#final-sale">Final sale</a>.</dd></div>
   <div><dt>Hide compare-at</dt><dd>A tag you name in <span class="path">Theme settings &gt; Prices</span>, for example <code>no-compare</code>, hides the compare-at price of that product.</dd></div>
 </dl>
+
+<h2 id="quantity-rules">Quantity rules and volume pricing</h2>
+<p>With Shopify's B2B features, a catalog can give each variant quantity rules (a minimum, a maximum and an increment) and volume pricing (a lower price from a quantity). You set them on the catalog in your admin (<span class="path">Products &gt; Catalogs</span>). A signed-in B2B customer sees them; nothing changes for anyone else.</p>
+<ul>
+  <li><strong>Product page.</strong> The quantity field starts at the minimum and steps by the increment, up to the maximum (and the stock, when you track it). A rule that is not the default is listed under the field: "Minimum of 2 / Increments of 2 / Maximum of 10". Price breaks show as a small <strong>Volume pricing</strong> table, with the row for the chosen quantity, plus what is in the bag, marked. A typed quantity off the rule moves to an allowed one, and a line says which rule moved it.</li>
+  <li><strong>Already in the bag.</strong> When the bag holds the minimum, the field starts at one increment, the most it allows is what the rule still leaves, and the label reads "Quantity (4 in your bag)".</li>
+  <li><strong>Show quantity off.</strong> The Buy buttons block shows the quantity field by default, in every template. With <strong>Show quantity</strong> turned off, Add to bag still adds the minimum, and express checkout uses it too.</li>
+  <li><strong>Quick add.</strong> A product with a minimum above 1 on any variant opens quick view instead of adding at once, so the shopper sees the rule; quick view adds each size's own minimum.</li>
+  <li><strong>Bag.</strong> Each line follows the same rule: minus stops at the minimum (Remove takes the line out), plus stops at the last whole increment under the maximum, the buttons step by the increment ("2 fewer"), and a typed quantity off the rule is refused with a short line. The rule shows under the line.</li>
+</ul>
+<p>The theme adds no rules of its own. Without them, the quantity field, quick add and the bag work as for any product.</p>
 
 <h2 id="more">Style codes, personalization, gift cards</h2>
 <ul>
@@ -138,7 +151,7 @@ Jewelry: size-guide#rings
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="getting-started.html">Getting started</a></li>
-    <li><a href="presets.html">Presets</a></li>
+    <li><a href="presets.html">The preset</a></li>
     <li><a href="signature-features.html">Signature features</a></li>
   </ul>
   <p class="docs-nav__group">Set up your store</p>

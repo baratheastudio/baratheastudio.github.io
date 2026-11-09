@@ -56,7 +56,7 @@
 <article class="ref" id="section-notice-bar" aria-labelledby="section-notice-bar-title">
   <h3 id="section-notice-bar-title">Announcement bar <code class="ref__handle">notice-bar</code></h3>
   <p class="ref__where">Goes in the header group. Add it from <strong>Announcement bar</strong>.</p>
-  <p>Up to three short messages above the header, one at a time with previous and next buttons. They never change on their own. Each message can show in some countries only, so a delivery line appears only where it is true.</p>
+  <p>Up to three short messages above the header, one at a time with previous and next buttons. They never change on their own. Each message can show in some countries only, so a delivery line appears only where it is true. The first message reads Welcome to our store until you change it.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(3)</span></summary>
     <div class="table-wrap">
@@ -80,7 +80,7 @@
         <caption>Message block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Text</th><td>Text<span class="ref__default">Default: Delivery in 2-4 working days, returns within 30 days</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Text<span class="ref__default">Default: Welcome to our store</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Show in countries</th><td>Text</td><td class="ref__note">Two-letter country codes separated by commas, for example US, CA. Leave empty to show everywhere.</td></tr>
         </tbody>
@@ -214,16 +214,16 @@
       </table>
     </div>
   </details>
-  <h4 id="section-client-care-block-visit">Block: Arrange a visit <span class="ref__limit">(up to 1)</span></h4>
+  <h4 id="section-client-care-block-visit">Block: Plan a visit <span class="ref__limit">(up to 1)</span></h4>
   <details class="ref__fold">
     <summary>Block settings <span class="ref__count">(2)</span></summary>
     <div class="table-wrap">
       <table class="ref-table">
-        <caption>Arrange a visit block settings</caption>
+        <caption>Plan a visit block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Label</th><td>Text</td><td class="ref__note">Leave empty for Arrange a visit. Goes to the Booking link in Theme settings, or to the contact form.</td></tr>
-        <tr><th scope="row">Contact form topic</th><td>Text</td><td class="ref__note">Without a Booking link, the contact form opens on this topic. It must match a topic code of the contact form. Leave empty for visit.</td></tr>
+        <tr><th scope="row">Label</th><td>Text</td><td class="ref__note">Leave empty for Plan a visit. Goes to the Visit page link in Theme settings, or to the contact form.</td></tr>
+        <tr><th scope="row">Contact form topic</th><td>Text</td><td class="ref__note">Without a Visit page link, the contact form opens on this topic. It must match a topic code of the contact form. Leave empty for visit.</td></tr>
         </tbody>
       </table>
     </div>
@@ -373,7 +373,7 @@
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Content</th></tr>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Top line</th><td>Text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: Letters from the workroom</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: Letters from the shop</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: New collections and the stories behind them, once a month.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Button label</th><td>Text<span class="ref__default">Default: Subscribe</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Small print</th><td>Rich text</td><td class="ref__note">For example, a link to your privacy policy.</td></tr>
@@ -389,9 +389,9 @@
 <article class="ref" id="section-story-shop" aria-labelledby="section-story-shop-title">
   <h3 id="section-story-shop-title">Shop the look <code class="ref__handle">story-shop</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Shop the look</strong>.</p>
-  <p>A campaign picture and the products in it, as one section. Pointing at a product, or reaching it with the keyboard, draws a fine ring where it sits in the picture, and the credit counts the products ("3 in this picture"). Placed first on the home page, its heading is the page heading. See <a href="signature-features.html#story-and-shop">Story and shop</a>.</p>
+  <p>A campaign picture and the products in it, as one section. Pointing at a product, or reaching it with the keyboard, draws a fine ring where it sits in the picture, and the credit counts the products ("3 in this picture"). Placed first on the home page, its heading is the page heading. The credit takes up to two links, as text links or as buttons. See <a href="signature-features.html#story-and-shop">Story and shop</a> and <a href="signature-features.html#opener-links">Links and buttons</a>.</p>
   <details class="ref__fold">
-    <summary>Settings <span class="ref__count">(16)</span></summary>
+    <summary>Settings <span class="ref__count">(19)</span></summary>
     <div class="table-wrap">
       <table class="ref-table">
         <caption>Shop the look settings</caption>
@@ -410,11 +410,14 @@
         <tr><th scope="row">Play the Shopify-hosted video on a loop, muted</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Never plays for shoppers who ask their device for reduced motion. A pause button is always shown.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Text</th></tr>
         <tr><th scope="row">Top line</th><td>Text<span class="ref__default">Default: New season</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: A long coat, cut close and worn open</span></td><td class="ref__note">One line of up to eight words reads best.</td></tr>
+        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: A soft bag, carried every day</span></td><td class="ref__note">One line of up to eight words reads best.</td></tr>
         <tr><th scope="row">Heading size</th><td>Small / Medium / Large<span class="ref__default">Default: Small</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Show the product count</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">For example &quot;3 in this picture&quot;. Counted from the products you add.</td></tr>
         <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Shop the look</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Second link label</th><td>Text</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Second link</th><td>Link</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link style</th><td>Text links / Buttons<span class="ref__default">Default: Text links</span></td><td class="ref__note">Buttons print the first link as a filled button and the second as an outline button, whatever the secondary style in Theme settings &gt; Buttons. Suits a banner that opens the home page.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Markers</th></tr>
         <tr class="ref-para"><td colspan="3">When a shopper points at a product or reaches it with the keyboard, a fine ring marks where it is in the picture. Set each product's point in its block.</td></tr>
         <tr><th scope="row">Show dots on the picture</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Visible dots that move to their product when tapped. Off keeps the picture clear.</td></tr>
@@ -473,10 +476,10 @@
 </article>
 <article class="ref" id="section-band" aria-labelledby="section-band-title">
   <h3 id="section-band-title">Image banner <code class="ref__handle">band</code></h3>
-  <p class="ref__where">Goes on any page. Add it from <strong>Image banner</strong> or <strong>Night banner with products</strong>.</p>
-  <p>A wide picture with its credit beneath or over it, and an optional row of products beneath. Added from Night banner with products, it starts in the dark scheme with its products: the night band of the lead look.</p>
+  <p class="ref__where">Goes on any page. Add it from <strong>Image banner</strong> or <strong>Night banner</strong>.</p>
+  <p>A wide picture with its credit beneath it, over it or, on computers, beside it, and an optional row of products beneath. The credit takes up to two links, as text links or as buttons; see <a href="signature-features.html#opener-links">Links and buttons</a> and <a href="signature-features.html#text-beside">Text beside the picture</a>. Added from Night banner, it starts in the dark scheme with its products: the night band (see <a href="signature-features.html#pacing">Pacing</a>).</p>
   <details class="ref__fold">
-    <summary>Settings <span class="ref__count">(16)</span></summary>
+    <summary>Settings <span class="ref__count">(20)</span></summary>
     <div class="table-wrap">
       <table class="ref-table">
         <caption>Image banner settings</caption>
@@ -487,13 +490,17 @@
         <tr><th scope="row">Phone image</th><td>Image</td><td class="ref__note">Shown on phones. Without it, the image is cropped to 4:5 around its focal point.</td></tr>
         <tr><th scope="row">Full width</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Text</th></tr>
-        <tr><th scope="row">Text position</th><td>Beneath the image / Over the image<span class="ref__default">Default: Beneath the image</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text position</th><td>Beneath the image / Over the image / Beside the image<span class="ref__default">Default: Beneath the image</span></td><td class="ref__note">Beside the image: from laptop width the text stands in a column next to the image, which then shows the phone image when one is set. Without one, the image is cropped to portrait around its focal point. Full width and Shape apply below laptop width only. Phones and tablets show the text beneath. On a light color scheme, a header set to sit over the first section stays solid.</td></tr>
+        <tr><th scope="row">Text side</th><td>Start / End<span class="ref__default">Default: Start</span></td><td class="ref__note">For text beside the image. Start is the left side in left-to-right languages.</td></tr>
         <tr><th scope="row">Top line</th><td>Text<span class="ref__default">Default: Evening</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: After dark</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Heading size</th><td>Small / Medium / Large<span class="ref__default">Default: Small</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Text</th><td>Rich text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: See the evening edit</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Second link label</th><td>Text</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Second link</th><td>Link</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link style</th><td>Text links / Buttons<span class="ref__default">Default: Text links</span></td><td class="ref__note">Buttons print the first link as a filled button and the second as an outline button, whatever the secondary style in Theme settings &gt; Buttons. Suits a banner that opens the home page.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Products beneath</th></tr>
         <tr><th scope="row">Show products beneath</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Collection</th><td>Collection</td><td class="ref__note"></td></tr>
@@ -533,8 +540,8 @@
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Top line</th><td>Text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Knitwear</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Shop knitwear</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Bags</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Shop bags</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -569,8 +576,8 @@
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Top line</th><td>Text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Coats</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: See the coats</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Bags</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: See the bags</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -589,10 +596,10 @@
         <caption>Large text settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Cloth chosen first, then the cut, then the hand that finishes it.</span></td><td class="ref__note">One sentence of up to twelve words reads best.</td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Leather chosen first, then the shape, then the hand that finishes it.</span></td><td class="ref__note">One sentence of up to twelve words reads best.</td></tr>
         <tr><th scope="row">Text size</th><td>Large / Medium<span class="ref__default">Default: Large</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Alignment</th><td>Start / Center<span class="ref__default">Default: Center</span></td><td class="ref__note">Phones always align the text to the start.</td></tr>
-        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Read how a coat is finished</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Read how a bag is finished</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -653,9 +660,9 @@
 <article class="ref" id="section-collection-index" aria-labelledby="section-collection-index-title">
   <h3 id="section-collection-index-title">Collection index <code class="ref__handle">collection-index</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Collection index</strong>.</p>
-  <p>Collection names set large as a text index, with one preview picture that follows the name under the pointer or keyboard focus. On phones each name can carry a small picture instead. Without collection blocks it lists a menu.</p>
+  <p>Collection names set large as a text index, with one preview picture that follows the name under the pointer or keyboard focus. Each row can add a line, the number of products and an arrow, with hairlines between the rows and a link under the list. On phones each name can carry a small picture instead, portrait or square. Without collection blocks it lists a menu. See <a href="signature-features.html#index-rows">Rows of the Collection index</a>.</p>
   <details class="ref__fold">
-    <summary>Settings <span class="ref__count">(7)</span></summary>
+    <summary>Settings <span class="ref__count">(13)</span></summary>
     <div class="table-wrap">
       <table class="ref-table">
         <caption>Collection index settings</caption>
@@ -664,10 +671,19 @@
         <tr><th scope="row">Top line</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Heading</th><td>Rich text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Menu</th><td>Menu</td><td class="ref__note">Used when the section has no collection blocks.</td></tr>
+        <tr class="ref-sub"><th colspan="3" scope="colgroup">Rows</th></tr>
         <tr><th scope="row">Show one line under each name</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">From the block, or from the start of the collection's description.</td></tr>
+        <tr><th scope="row">Show the number of products</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note">Counted from each collection, for example &quot;7 styles&quot;.</td></tr>
+        <tr><th scope="row">Show an arrow at the end of each row</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Show lines between rows</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+        <tr class="ref-sub"><th colspan="3" scope="colgroup">Pictures</th></tr>
         <tr><th scope="row">Preview shape</th><td>Portrait 4:5 / Tall 2:3 / Square<span class="ref__default">Default: Portrait 4:5</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Preview side</th><td>Start / End<span class="ref__default">Default: End</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Show small images on phones</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Small image shape</th><td>Portrait 4:5 / Square<span class="ref__default">Default: Portrait 4:5</span></td><td class="ref__note"></td></tr>
+        <tr class="ref-sub"><th colspan="3" scope="colgroup">Link under the list</th></tr>
+        <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note">Leave empty to read &quot;View all&quot;.</td></tr>
+        <tr><th scope="row">Link</th><td>Link</td><td class="ref__note">For example the page that lists every collection. Leave empty to hide the link.</td></tr>
         </tbody>
       </table>
     </div>
@@ -751,12 +767,12 @@
         <tr><th scope="row">Image shape</th><td>Portrait 4:5 / Tall 2:3 / Wide 3:2 / Square<span class="ref__default">Default: Portrait 4:5</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image side</th><td>Start / End<span class="ref__default">Default: Start</span></td><td class="ref__note"></td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Text</th></tr>
-        <tr><th scope="row">Top line</th><td>Text<span class="ref__default">Default: The workroom</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: Finished by hand</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Top line</th><td>Text<span class="ref__default">Default: The shop</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Heading</th><td>Rich text<span class="ref__default">Default: Handled before it is listed</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Heading size</th><td>Small / Medium / Large<span class="ref__default">Default: Small</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: A sample text</span></td><td class="ref__note">About fifty words reads best.</td></tr>
         <tr><th scope="row">More text</th><td>Rich text</td><td class="ref__note">Opens under &quot;Read more&quot;.</td></tr>
-        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Read more about the workroom</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Link label</th><td>Text<span class="ref__default">Default: Read more about the shop</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -869,7 +885,7 @@
         <tbody>
         <tr><th scope="row">Icon</th><td>None / Delivery / Returns / Box / Needle / Person / Place<span class="ref__default">Default: None</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Delivery</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Delivered in our own box, with a paper sleeve.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: How and when your order reaches you.</span></td><td class="ref__note"></td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">More about this promise</th></tr>
         <tr><th scope="row">Store policy</th><td>None / Shipping policy / Refund policy / Privacy policy / Terms of service<span class="ref__default">Default: None</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Page</th><td>Page</td><td class="ref__note">Used when no store policy is chosen. Opens in a panel.</td></tr>
@@ -884,7 +900,7 @@
 <article class="ref" id="section-service-links" aria-labelledby="section-service-links-title">
   <h3 id="section-service-links-title">Service links <code class="ref__handle">service-links</code></h3>
   <p class="ref__where">Goes on any page and in the footer group. Add it from <strong>Service links</strong>.</p>
-  <p>Up to four services, such as alterations, repairs or personalization. A service shows only when it has a link.</p>
+  <p>Up to four services, such as repairs, care or personalization. A service shows only when it has a link.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(1)</span></summary>
     <div class="table-wrap">
@@ -906,8 +922,8 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Alterations</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Hems and sleeves adjusted in the workroom.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Repairs</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Heel tips, soles and handles repaired in the shop.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Small drawing</th><td>Person / Pin / Needle<span class="ref__default">Default: Person</span></td><td class="ref__note">Shown before the link: a person for people, a pin for places, a needle for aftercare.</td></tr>
         <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note">Shoppers see this service only when it has a link.</td></tr>
@@ -928,7 +944,7 @@
         <caption>Service note settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Sentence</th><td>Text</td><td class="ref__note">One line, for example: Alterations on every coat, in the workroom.</td></tr>
+        <tr><th scope="row">Sentence</th><td>Text</td><td class="ref__note">One line, for example: Questions about fit? Ask an adviser.</td></tr>
         <tr><th scope="row">Symbol</th><td>Person / Place / Needle<span class="ref__default">Default: Needle</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Opens</th><td>Client care / A link<span class="ref__default">Default: Client care</span></td><td class="ref__note">Client care carries the page's product or collection as context. The note hides when its destination is not set up.</td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
@@ -978,7 +994,7 @@
 <article class="ref" id="section-quote" aria-labelledby="section-quote-title">
   <h3 id="section-quote-title">Quote <code class="ref__handle">quote</code></h3>
   <p class="ref__where">Goes on any page and in the footer group. Add it from <strong>Quote</strong>.</p>
-  <p>One quote with a name, a role or publication, and an optional portrait or logo.</p>
+  <p>One quote with an optional source (a name, a role or a publication) and an optional portrait or logo. Nothing shows under the quote until you type a source.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(9)</span></summary>
     <div class="table-wrap">
@@ -987,7 +1003,7 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Quote</th><td>Rich text<span class="ref__default">Default: A sample text</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Name</th><td>Text<span class="ref__default">Default: Name</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Name</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Role or publication</th><td>Text</td><td class="ref__note">For example: Founder, or the name of a magazine.</td></tr>
         <tr><th scope="row">Portrait or logo</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image shape</th><td>Square / Portrait 4:5 / Wide 3:2<span class="ref__default">Default: Square</span></td><td class="ref__note"></td></tr>
@@ -1067,7 +1083,7 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Figure</th><td>Text<span class="ref__default">Default: 40 hours</span></td><td class="ref__note">A fact you can stand behind, such as a year or a measurement. Never ratings or stock counts.</td></tr>
-        <tr><th scope="row">Label</th><td>Text<span class="ref__default">Default: To make one coat</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Label</th><td>Text<span class="ref__default">Default: Designers we stock</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Note</th><td>Text</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -1107,7 +1123,7 @@
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Choose what to personalize</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Pick the bag or the coat, and tell us what you would like.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Pick the bag or the shoes, and tell us what you would like.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
         </tbody>
@@ -1119,7 +1135,7 @@
 <article class="ref" id="section-team" aria-labelledby="section-team-title">
   <h3 id="section-team-title">Team <code class="ref__handle">team</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Team</strong>.</p>
-  <p>People with a picture, a name, a role and a few words.</p>
+  <p>People with a picture, a name, a role and a few words. A name shows only once you type one.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(6)</span></summary>
     <div class="table-wrap">
@@ -1146,8 +1162,8 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Name</th><td>Text<span class="ref__default">Default: Name</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Role</th><td>Text<span class="ref__default">Default: Role</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Name</th><td>Text</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Role</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Text</th><td>Rich text</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -1183,9 +1199,9 @@
         <caption>Moment block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Year or date</th><td>Text<span class="ref__default">Default: Year</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: A moment</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Placeholder: what happened, in one sentence.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Year or date</th><td>Text<span class="ref__default">Default: 2024</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: A new chapter</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: What changed that year, and why it mattered.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -1196,7 +1212,7 @@
 <article class="ref" id="section-letter" aria-labelledby="section-letter-title">
   <h3 id="section-letter-title">Letter <code class="ref__handle">letter</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Letter</strong>.</p>
-  <p>A letter from the house with a portrait, a scanned signature, a name and a role.</p>
+  <p>A letter from the house with a portrait, a scanned signature, a name and a role. Until you type a name it signs off with the role alone.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(8)</span></summary>
     <div class="table-wrap">
@@ -1208,8 +1224,8 @@
         <tr><th scope="row">Heading</th><td>Text<span class="ref__default">Default: Why we make fewer things</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: A sample text</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Signature</th><td>Image</td><td class="ref__note">A scan of the signature on a transparent background.</td></tr>
-        <tr><th scope="row">Name</th><td>Text<span class="ref__default">Default: Name</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Role</th><td>Text<span class="ref__default">Default: Role</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Name</th><td>Text</td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Role</th><td>Text<span class="ref__default">Default: Founder</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Portrait</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image side</th><td>Start / End<span class="ref__default">Default: Start</span></td><td class="ref__note"></td></tr>
         </tbody>
@@ -1537,7 +1553,7 @@
         <caption>Search, no results settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Tip</th><td>Text</td><td class="ref__note">Empty uses a short tip such as: Try a broader word, such as coat or bag.</td></tr>
+        <tr><th scope="row">Tip</th><td>Text</td><td class="ref__note">Empty uses a short tip such as: Try a broader word, such as bag or shoe.</td></tr>
         <tr><th scope="row">Collections</th><td>Collections</td><td class="ref__note">Up to 3. Empty uses the collections in Theme settings, Search.</td></tr>
         <tr><th scope="row">Show Ask an adviser</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Opens Client care with the search words. Hidden until Client care is set up.</td></tr>
         </tbody>
@@ -1554,7 +1570,7 @@
 <article class="ref" id="section-quick-view" aria-labelledby="section-quick-view-title">
   <h3 id="section-quick-view-title">Quick view <code class="ref__handle">quick-view</code></h3>
   <p class="ref__where">Opened from quick add on product cards; not added to pages.</p>
-  <p>The sheet that opens from quick add for products with more than 8 sizes or more than 2 options. It shows the product page's own blocks, so sizes, express checkout and final sale behave as they do on the page.</p>
+  <p>The sheet that opens from quick add for products with more than 8 sizes or more than 2 options, or with a minimum quantity above 1. It shows the product page's own blocks, so sizes, express checkout and final sale behave as they do on the page.</p>
   <p class="ref__small">It has no settings of its own.</p>
 </article>
 </section>
@@ -1900,7 +1916,7 @@
 <article class="ref" id="block-product-buy-buttons" aria-labelledby="block-product-buy-buttons-title">
   <h3 id="block-product-buy-buttons-title">Buy buttons <code class="ref__handle">product-buy-buttons</code></h3>
   <p class="ref__where">Goes in <a href="#section-featured-product">Featured product</a>, <a href="#section-main-product">Product information</a>.</p>
-  <p>Add to bag and accelerated checkout, both waiting for a size when the product has one (see Size option names in the theme settings); quantity; the gift card recipient form; and the final sale line.</p>
+  <p>Add to bag and accelerated checkout, both waiting for a size when the product has one (see Size option names in the theme settings); quantity; the gift card recipient form; and the final sale line. The quantity follows B2B quantity rules, with volume pricing; see <a href="product-setup.html#quantity-rules">Quantity rules and volume pricing</a>.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(4)</span></summary>
     <div class="table-wrap">
@@ -1910,7 +1926,7 @@
         <tbody>
         <tr><th scope="row">Button label</th><td>Text</td><td class="ref__note">Leave it empty for Add to bag.</td></tr>
         <tr><th scope="row">Show accelerated checkout buttons</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shop Pay, Apple Pay and others, as set in your payment settings.</td></tr>
-        <tr><th scope="row">Show quantity</th><td>On or off<span class="ref__default">Default: Off</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Show quantity</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">When hidden, the minimum of a B2B quantity rule is still added.</td></tr>
         <tr><th scope="row">Show the gift card recipient form</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Gift card products only.</td></tr>
         </tbody>
       </table>
@@ -1928,7 +1944,7 @@
         <caption>Promises and help block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr class="ref-para"><td colspan="3">Up to three promises, each opening its policy, then one Ask an adviser link. An empty promise uses the bag promise of the same number.</td></tr>
+        <tr class="ref-para"><td colspan="3">Up to three promises, each opening its policy, then one Ask an adviser link. An empty promise uses the bag promise of the same number (Theme settings &gt; Bag), and shows nothing when that is empty too.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Promise 1</th></tr>
         <tr><th scope="row">Text</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Opens</th><td>Nothing / Refund policy / Shipping policy / Terms of service / A page<span class="ref__default">Default: A page</span></td><td class="ref__note"></td></tr>
@@ -2046,7 +2062,7 @@
 <article class="ref" id="section-contact-form" aria-labelledby="section-contact-form-title">
   <h3 id="section-contact-form-title">Contact form <code class="ref__handle">contact-form</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Contact form</strong>.</p>
-  <p>The contact form: topics you name, optional fields (phone, item or style code, order number, boutique, When suits you) and the ways to reach you. Links from Client care choose the topic and carry what the shopper asked about. There is no date or time picker.</p>
+  <p>The contact form: topics you name, optional fields (phone, item or style code, order number, boutique, Best time to reach you) and the ways to reach you. Links from Client care choose the topic and carry what the shopper asked about. There is no date or time picker.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(13)</span></summary>
     <div class="table-wrap">
@@ -2058,16 +2074,16 @@
         <tr><th scope="row">Text</th><td>Rich text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Layout</th><td>Text beside the form / Text above the form<span class="ref__default">Default: Text beside the form</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Show Call, Message and Email</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">From Theme settings &gt; Client care. Each hides when it is not set.</td></tr>
-        <tr><th scope="row">Show the booking link</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shown when a Booking link is set in Theme settings &gt; Client care.</td></tr>
+        <tr><th scope="row">Show the visit page link</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">Shown when a Visit page link is set in Theme settings &gt; Client care.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Fields</th></tr>
         <tr><th scope="row">Phone</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Item or style code</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Order number</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">When suits you</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">One free-text field. There is no date or time picker.</td></tr>
+        <tr><th scope="row">Best time to reach you</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note">One free-text field. There is no date or time picker.</td></tr>
         <tr><th scope="row">Boutique</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Boutiques</th><td>Text</td><td class="ref__note">One per line. The boutique field shows only when this list has names.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">After sending</th></tr>
-        <tr><th scope="row">Reply promise</th><td>Text<span class="ref__default">Default: We reply within one working day.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Reply promise</th><td>Text<span class="ref__default">Default: We reply to every message by email.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Confirmation</th><td>Text</td><td class="ref__note">Shown after the form is sent. Leave empty for the standard line.</td></tr>
         </tbody>
       </table>
@@ -2092,7 +2108,7 @@
 <article class="ref" id="section-boutiques" aria-labelledby="section-boutiques-title">
   <h3 id="section-boutiques-title">Boutiques <code class="ref__handle">boutiques</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Boutiques</strong>.</p>
-  <p>Your shops, each with a picture, an address, opening hours by day (today marked in the shop's own time zone), phone, email, services, a visit link and a map link.</p>
+  <p>Your shops, each with a picture, an address, opening hours by day (today marked in the shop's own time zone), phone, email, services, a visit page link and a map link. Directions show only when a boutique has an address or a map link.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(4)</span></summary>
     <div class="table-wrap">
@@ -2117,8 +2133,8 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Name</th><td>Text<span class="ref__default">Default: Boutique</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">City</th><td>Text<span class="ref__default">Default: City</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Name</th><td>Text<span class="ref__default">Default: Our boutique</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">City</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Address</th><td>Text</td><td class="ref__note"></td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Opening hours</th></tr>
         <tr class="ref-para"><td colspan="3">One line per day, for example &quot;10:00 - 19:00&quot;. Leave a day empty when closed.</td></tr>
@@ -2129,13 +2145,13 @@
         <tr><th scope="row">Friday</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Saturday</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Sunday</th><td>Text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Time zone</th><td>Text</td><td class="ref__note">For example Europe/Paris or Asia/Dubai. Marks today's hours in the boutique's own time.</td></tr>
+        <tr><th scope="row">Time zone</th><td>Text</td><td class="ref__note">For example Europe/Paris or America/New_York. Marks today's hours in the boutique's own time.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Contact</th></tr>
         <tr><th scope="row">Phone</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Email</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Services</th><td>Text</td><td class="ref__note">Separated by commas, for example Alterations, Personalization.</td></tr>
-        <tr><th scope="row">Visit link</th><td>Link</td><td class="ref__note">Leave empty to use the Booking link in Theme settings, or the contact form with the visit topic.</td></tr>
-        <tr><th scope="row">Map link</th><td>Link</td><td class="ref__note">Leave empty to search the address on a map.</td></tr>
+        <tr><th scope="row">Visit page link</th><td>Link</td><td class="ref__note">Leave empty to use the Visit page link in Theme settings, or the contact form with the visit topic.</td></tr>
+        <tr><th scope="row">Map link</th><td>Link</td><td class="ref__note">Leave empty to search the address on a map. Directions show only when there is an address or a map link.</td></tr>
         </tbody>
       </table>
     </div>
@@ -2145,7 +2161,7 @@
 <article class="ref" id="section-address" aria-labelledby="section-address-title">
   <h3 id="section-address-title">Address and hours <code class="ref__handle">address</code></h3>
   <p class="ref__where">Goes on any page and in the footer group. Add it from <strong>Address and hours</strong>.</p>
-  <p>One address with opening hours by day, a picture, contact details, a map link and Arrange a visit.</p>
+  <p>One address with opening hours by day, a picture, contact details, a map link and Plan a visit. Directions show only with an address or a map link.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(20)</span></summary>
     <div class="table-wrap">
@@ -2155,7 +2171,7 @@
         <tbody>
         <tr><th scope="row">Top line</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Heading</th><td>Text<span class="ref__default">Default: The boutique</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Address</th><td>Text<span class="ref__default">Default: 1 Example Street City</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Address</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image shape</th><td>Portrait 4:5 / Square / Wide 3:2<span class="ref__default">Default: Portrait 4:5</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Image side</th><td>Start / End<span class="ref__default">Default: Start</span></td><td class="ref__note"></td></tr>
@@ -2168,14 +2184,14 @@
         <tr><th scope="row">Friday</th><td>Text<span class="ref__default">Default: 10:00 - 19:00</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Saturday</th><td>Text<span class="ref__default">Default: 11:00 - 18:00</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Sunday</th><td>Text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Time zone</th><td>Text</td><td class="ref__note">For example Europe/Paris or Asia/Dubai. Marks today's hours in the boutique's own time.</td></tr>
+        <tr><th scope="row">Time zone</th><td>Text</td><td class="ref__note">For example Europe/Paris or America/New_York. Marks today's hours in the boutique's own time.</td></tr>
         <tr class="ref-sub"><th colspan="3" scope="colgroup">Contact</th></tr>
         <tr><th scope="row">Phone</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Email</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Note</th><td>Rich text</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Map link</th><td>Link</td><td class="ref__note">Leave empty to search the address on a map.</td></tr>
-        <tr><th scope="row">Show Arrange a visit</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Visit link</th><td>Link</td><td class="ref__note">Leave empty to use the Booking link in Theme settings, or the contact form with the visit topic.</td></tr>
+        <tr><th scope="row">Map link</th><td>Link</td><td class="ref__note">Leave empty to search the address on a map. Directions show only when there is an address or a map link.</td></tr>
+        <tr><th scope="row">Show Plan a visit</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Visit page link</th><td>Link</td><td class="ref__note">Leave empty to use the Visit page link in Theme settings, or the contact form with the visit topic.</td></tr>
         </tbody>
       </table>
     </div>
@@ -2324,7 +2340,7 @@
 <article class="ref" id="section-price-table" aria-labelledby="section-price-table-title">
   <h3 id="section-price-table-title">Price table <code class="ref__handle">price-table</code></h3>
   <p class="ref__where">Goes on any page. Add it from <strong>Price table</strong>.</p>
-  <p>Services with prices, starting prices and usual times.</p>
+  <p>Services with prices or starting prices and a time, as you type them. A typed price is text: it does not follow the store or shopper currency.</p>
   <details class="ref__fold">
     <summary>Settings <span class="ref__count">(7)</span></summary>
     <div class="table-wrap">
@@ -2353,10 +2369,10 @@
         <caption>Service block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Service</th><td>Text<span class="ref__default">Default: Shorten sleeves</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Price</th><td>Text<span class="ref__default">Default: USD 60</span></td><td class="ref__note">Type the price as you want it shown, for example &quot;USD 60&quot;.</td></tr>
+        <tr><th scope="row">Service</th><td>Text<span class="ref__default">Default: Replace heel tips</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Price</th><td>Text<span class="ref__default">Default: USD 60</span></td><td class="ref__note">Type the price as you want it shown, for example &quot;USD 60&quot;. It is text, so it does not change with the store or shopper currency.</td></tr>
         <tr><th scope="row">Starting price (&quot;From&quot;)</th><td>On or off<span class="ref__default">Default: On</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Usual time</th><td>Text<span class="ref__default">Default: 5 working days</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Usual time</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Note</th><td>Text</td><td class="ref__note"></td></tr>
         </tbody>
       </table>
@@ -2393,8 +2409,8 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Image</th><td>Image</td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Alterations</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: A sample text</span></td><td class="ref__note">10 to 22 words.</td></tr>
+        <tr><th scope="row">Title</th><td>Text<span class="ref__default">Default: Shoe repairs</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Text</th><td>Rich text<span class="ref__default">Default: Heel tips, soles and linings replaced in the shop.</span></td><td class="ref__note">10 to 22 words.</td></tr>
         <tr><th scope="row">Glyph</th><td>Needle (after-care) / Person / Pin (a place)<span class="ref__default">Default: Needle (after-care)</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link label</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Link</th><td>Link</td><td class="ref__note"></td></tr>
@@ -2478,7 +2494,7 @@
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
         <tr><th scope="row">Top line</th><td>Text<span class="ref__default">Default: Chapter one</span></td><td class="ref__note"></td></tr>
-        <tr><th scope="row">Heading</th><td>Text<span class="ref__default">Default: In the workroom</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Heading</th><td>Text<span class="ref__default">Default: In the workshop</span></td><td class="ref__note"></td></tr>
         </tbody>
       </table>
     </div>
@@ -2537,7 +2553,7 @@
         <caption>Pull quote block settings</caption>
         <thead><tr><th scope="col">Setting</th><th scope="col">Choices and default</th><th scope="col">Notes</th></tr></thead>
         <tbody>
-        <tr><th scope="row">Quote</th><td>Rich text<span class="ref__default">Default: A coat should outlast the season it was made for.</span></td><td class="ref__note"></td></tr>
+        <tr><th scope="row">Quote</th><td>Rich text<span class="ref__default">Default: A bag should outlast the season it was made for.</span></td><td class="ref__note"></td></tr>
         <tr><th scope="row">Source</th><td>Text</td><td class="ref__note"></td></tr>
         <tr><th scope="row">Alignment</th><td>Start / Center<span class="ref__default">Default: Center</span></td><td class="ref__note"></td></tr>
         </tbody>
@@ -2659,7 +2675,7 @@
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="getting-started.html">Getting started</a></li>
-    <li><a href="presets.html">Presets</a></li>
+    <li><a href="presets.html">The preset</a></li>
     <li><a href="signature-features.html">Signature features</a></li>
   </ul>
   <p class="docs-nav__group">Set up your store</p>
