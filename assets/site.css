@@ -257,11 +257,11 @@ tr.ref-para td { color: var(--muted); font-style: normal; }
 .button:hover { text-decoration: none; background: var(--ink-text); color: var(--ink); }
 .page-band .button:hover { background: var(--ink); color: var(--page); }
 
-/* Two looks */
+/* The look (home page) */
 .looks { display: grid; gap: 16px; margin-top: 24px; }
-@media (min-width: 750px) { .looks { grid-template-columns: 1fr 1fr; gap: 24px; } }
+@media (min-width: 750px) { .looks { grid-template-columns: 1fr 1fr; gap: 24px; } .looks--one { grid-template-columns: minmax(0, 40rem); } }
 .look { padding: 24px; background: var(--mist); }
-.look--plaster { background: #F1F1EF; }
+.look--concrete { background: #F1F1EF; }
 .look h3 { margin-top: 6px; font-size: 26px; }
 .look p { max-width: none; }
 .look .swatches { display: flex; gap: 6px; margin-top: 16px; padding: 0; list-style: none; }
